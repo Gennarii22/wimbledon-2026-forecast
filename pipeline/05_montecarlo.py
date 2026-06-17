@@ -31,20 +31,22 @@ def seed_slot_order(num):
         order=new
     return order  # order[k]=valore-seed assegnato alla posizione k
 
-def precompute_matrix(field, state, bo, calib):
+def precompute_matrix(field, state, bo, beta, calib):
+    """P[i][j] = P(i batte j): rank-prior (blended_raw) + calibrazione/forma (final_prob)."""
     nP=len(field)
     R=[E.get_ratings(state,f['player'],'Grass') for f in field]
     P=np.zeros((nP,nP))
     for i in range(nP):
+        fi=field[i]
         for j in range(nP):
             if i==j: continue
-            hold_a=E.exp_score(R[i]['serve'],R[j]['ret']); hold_b=E.exp_score(R[j]['serve'],R[i]['ret'])
-            p_bc=E.match_from_set(E.compute_set_probability(hold_a,hold_b),bo)
-            p_elo=E.exp_score(R[i]['elo'],R[j]['elo'])
-            P[i][j]=E.platt(E.DEFAULT_ALPHA*p_bc+(1-E.DEFAULT_ALPHA)*p_elo, *calib)
+            fj=field[j]
+            base=E.blended_raw(R[i],R[j],fi['rank'],fj['rank'],bo,beta)
+            P[i][j]=E.final_prob(base, fi['form10']-fj['form10'],
+                                 fi['grass']-fj['grass'], fi['ped']-fj['ped'], calib)
     return P
 
-def run(field, state, bo, calib, circuit):
+def run(field, state, bo, beta, calib, circuit):
     nP=len(field)  # 128
     order=seed_slot_order(nP)
     pos_of_seed={order[k]:k for k in range(nP)}          # seed-rank -> slot
@@ -53,7 +55,7 @@ def run(field, state, bo, calib, circuit):
     nonseed_idx=list(range(32,nP))                        # indici field dei non-teste
     nonseed_slots=[k for k in range(nP) if k not in set(seed_slots)]
 
-    P=precompute_matrix(field,state,bo,calib)
+    P=precompute_matrix(field,state,bo,beta,calib)
     rounds=7  # 128->1
     counts=np.zeros((nP,5))  # [title, final, sf, qf, r16] reach counts per player (index field)
 
@@ -92,6 +94,7 @@ def run(field, state, bo, calib, circuit):
         res.append(dict(player=f['player'], seed=f['seed'], rank=f['rank'],
                         serve=f['serve'], ret=f['ret'], elo=f['elo'], n_grass=f['n_grass'],
                         n_match=int(state['n_match'].get(f['player'],0)),
+                        form10=f['form10'], grass=f['grass'], ped=f['ped'],
                         p_title=round(counts[i][0]/N_SIMS,4),
                         p_final=round(counts[i][1]/N_SIMS,4),
                         p_sf=round(counts[i][2]/N_SIMS,4),
@@ -113,14 +116,15 @@ def run(field, state, bo, calib, circuit):
 def main():
     state=pickle.load(open(os.path.join(DATA,"ratings_state.pkl"),"rb"))
     caljson=json.load(open(os.path.join(DATA,"calibration.json")))
-    E.DEFAULT_ALPHA=caljson['alpha']; calib=(caljson['platt_a'],caljson['platt_b'])
+    beta=caljson['beta']; E.RANK_BETA=beta
+    calib=(caljson['platt_a'],caljson['platt_b'],caljson['c_form'],caljson['c_grass'],caljson['c_ped'])
     for circuit,ff,of in [('ATP','field_men.json','forecast_men.json'),
                           ('WTA','field_women.json','forecast_women.json')]:
         field=json.load(open(os.path.join(DATA,ff)))
         bo=5 if circuit=='ATP' else 3
         print(f"\n{circuit}: Monte Carlo {N_SIMS} simulazioni (BO{bo})...")
-        res,r1=run(field,state,bo,calib,circuit)
-        json.dump(dict(circuit=circuit, n_sims=N_SIMS, alpha=E.DEFAULT_ALPHA,
+        res,r1=run(field,state,bo,beta,calib,circuit)
+        json.dump(dict(circuit=circuit, n_sims=N_SIMS, beta=beta, calib=list(calib),
                        forecast=res, r1_canonical=r1),
                   open(os.path.join(SITE,of),"w"), indent=2)
         print(f"  Top 10 P(titolo):")

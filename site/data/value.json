@@ -1,0 +1,302 @@
+{
+  "Grand Slam 2022-2025": {
+    "Pinnacle": {
+      "EV>=0%": {
+        "n": 3614,
+        "winrate": 0.384,
+        "yield_pct": -5.91,
+        "avg_odds": 4.6,
+        "profit": -213.7
+      },
+      "EV>=5%": {
+        "n": 2899,
+        "winrate": 0.337,
+        "yield_pct": -6.66,
+        "avg_odds": 5.15,
+        "profit": -193.1
+      },
+      "EV>=10%": {
+        "n": 2404,
+        "winrate": 0.3,
+        "yield_pct": -6.06,
+        "avg_odds": 5.71,
+        "profit": -145.6
+      },
+      "EV>=15%": {
+        "n": 2013,
+        "winrate": 0.274,
+        "yield_pct": -5.6,
+        "avg_odds": 6.17,
+        "profit": -112.7
+      },
+      "EV>=20%": {
+        "n": 1739,
+        "winrate": 0.249,
+        "yield_pct": -8.18,
+        "avg_odds": 6.56,
+        "profit": -142.3
+      }
+    },
+    "MAX mercato": {
+      "EV>=0%": {
+        "n": 3995,
+        "winrate": 0.4,
+        "yield_pct": -3.71,
+        "avg_odds": 4.83,
+        "profit": -148.3
+      },
+      "EV>=5%": {
+        "n": 3245,
+        "winrate": 0.348,
+        "yield_pct": -4.6,
+        "avg_odds": 5.45,
+        "profit": -149.3
+      },
+      "EV>=10%": {
+        "n": 2703,
+        "winrate": 0.316,
+        "yield_pct": -3.09,
+        "avg_odds": 6.02,
+        "profit": -83.5
+      },
+      "EV>=15%": {
+        "n": 2257,
+        "winrate": 0.279,
+        "yield_pct": -4.13,
+        "avg_odds": 6.59,
+        "profit": -93.2
+      },
+      "EV>=20%": {
+        "n": 1960,
+        "winrate": 0.254,
+        "yield_pct": -4.88,
+        "avg_odds": 7.09,
+        "profit": -95.6
+      }
+    },
+    "Bet365": {
+      "EV>=0%": {
+        "n": 3143,
+        "winrate": 0.376,
+        "yield_pct": -9.59,
+        "avg_odds": 4.15,
+        "profit": -301.4
+      },
+      "EV>=5%": {
+        "n": 2525,
+        "winrate": 0.337,
+        "yield_pct": -9.63,
+        "avg_odds": 4.61,
+        "profit": -243.1
+      },
+      "EV>=10%": {
+        "n": 2039,
+        "winrate": 0.293,
+        "yield_pct": -11.14,
+        "avg_odds": 5.08,
+        "profit": -227.1
+      },
+      "EV>=15%": {
+        "n": 1701,
+        "winrate": 0.27,
+        "yield_pct": -11.31,
+        "avg_odds": 5.43,
+        "profit": -192.4
+      },
+      "EV>=20%": {
+        "n": 1435,
+        "winrate": 0.252,
+        "yield_pct": -11.48,
+        "avg_odds": 5.74,
+        "profit": -164.7
+      }
+    },
+    "Media": {
+      "EV>=0%": {
+        "n": 3158,
+        "winrate": 0.381,
+        "yield_pct": -9.91,
+        "avg_odds": 3.88,
+        "profit": -313.1
+      },
+      "EV>=5%": {
+        "n": 2530,
+        "winrate": 0.341,
+        "yield_pct": -9.82,
+        "avg_odds": 4.27,
+        "profit": -248.3
+      },
+      "EV>=10%": {
+        "n": 2031,
+        "winrate": 0.304,
+        "yield_pct": -11.93,
+        "avg_odds": 4.67,
+        "profit": -242.4
+      },
+      "EV>=15%": {
+        "n": 1662,
+        "winrate": 0.27,
+        "yield_pct": -14.07,
+        "avg_odds": 5.01,
+        "profit": -233.9
+      },
+      "EV>=20%": {
+        "n": 1394,
+        "winrate": 0.251,
+        "yield_pct": -14.14,
+        "avg_odds": 5.29,
+        "profit": -197.1
+      }
+    }
+  },
+  "Wimbledon 2021-2025": {
+    "Pinnacle": {
+      "EV>=0%": {
+        "n": 1139,
+        "winrate": 0.382,
+        "yield_pct": -4.45,
+        "avg_odds": 4.37,
+        "profit": -50.7
+      },
+      "EV>=5%": {
+        "n": 949,
+        "winrate": 0.334,
+        "yield_pct": -6.38,
+        "avg_odds": 4.82,
+        "profit": -60.6
+      },
+      "EV>=10%": {
+        "n": 802,
+        "winrate": 0.3,
+        "yield_pct": -5.81,
+        "avg_odds": 5.29,
+        "profit": -46.6
+      },
+      "EV>=15%": {
+        "n": 692,
+        "winrate": 0.28,
+        "yield_pct": -7.17,
+        "avg_odds": 5.63,
+        "profit": -49.6
+      },
+      "EV>=20%": {
+        "n": 593,
+        "winrate": 0.265,
+        "yield_pct": -7.11,
+        "avg_odds": 5.96,
+        "profit": -42.1
+      }
+    },
+    "MAX mercato": {
+      "EV>=0%": {
+        "n": 1276,
+        "winrate": 0.401,
+        "yield_pct": -1.57,
+        "avg_odds": 4.81,
+        "profit": -20.0
+      },
+      "EV>=5%": {
+        "n": 1057,
+        "winrate": 0.347,
+        "yield_pct": -3.06,
+        "avg_odds": 5.37,
+        "profit": -32.3
+      },
+      "EV>=10%": {
+        "n": 908,
+        "winrate": 0.322,
+        "yield_pct": -0.75,
+        "avg_odds": 5.86,
+        "profit": -6.8
+      },
+      "EV>=15%": {
+        "n": 774,
+        "winrate": 0.283,
+        "yield_pct": -4.34,
+        "avg_odds": 6.36,
+        "profit": -33.6
+      },
+      "EV>=20%": {
+        "n": 682,
+        "winrate": 0.267,
+        "yield_pct": -4.63,
+        "avg_odds": 6.75,
+        "profit": -31.6
+      }
+    },
+    "Bet365": {
+      "EV>=0%": {
+        "n": 1018,
+        "winrate": 0.366,
+        "yield_pct": -12.25,
+        "avg_odds": 4.0,
+        "profit": -124.7
+      },
+      "EV>=5%": {
+        "n": 832,
+        "winrate": 0.328,
+        "yield_pct": -11.91,
+        "avg_odds": 4.42,
+        "profit": -99.1
+      },
+      "EV>=10%": {
+        "n": 689,
+        "winrate": 0.292,
+        "yield_pct": -14.3,
+        "avg_odds": 4.78,
+        "profit": -98.5
+      },
+      "EV>=15%": {
+        "n": 597,
+        "winrate": 0.283,
+        "yield_pct": -14.02,
+        "avg_odds": 5.0,
+        "profit": -83.7
+      },
+      "EV>=20%": {
+        "n": 509,
+        "winrate": 0.255,
+        "yield_pct": -15.92,
+        "avg_odds": 5.28,
+        "profit": -81.1
+      }
+    },
+    "Media": {
+      "EV>=0%": {
+        "n": 1030,
+        "winrate": 0.373,
+        "yield_pct": -10.42,
+        "avg_odds": 3.87,
+        "profit": -107.4
+      },
+      "EV>=5%": {
+        "n": 852,
+        "winrate": 0.336,
+        "yield_pct": -10.85,
+        "avg_odds": 4.17,
+        "profit": -92.4
+      },
+      "EV>=10%": {
+        "n": 705,
+        "winrate": 0.295,
+        "yield_pct": -12.15,
+        "avg_odds": 4.56,
+        "profit": -85.7
+      },
+      "EV>=15%": {
+        "n": 588,
+        "winrate": 0.277,
+        "yield_pct": -15.27,
+        "avg_odds": 4.86,
+        "profit": -89.8
+      },
+      "EV>=20%": {
+        "n": 510,
+        "winrate": 0.255,
+        "yield_pct": -15.64,
+        "avg_odds": 5.16,
+        "profit": -79.8
+      }
+    }
+  }
+}

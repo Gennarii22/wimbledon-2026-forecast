@@ -15,6 +15,8 @@ import engine as E
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
 DATA=os.path.join(ROOT,"data")
 
+FORM=json.load(open(os.path.join(DATA,"form_state.json"))) if os.path.exists(os.path.join(DATA,"form_state.json")) else {}
+
 def build(circuit, state, n=128, n_seeds=32):
     cand=[]
     seen=set()
@@ -30,9 +32,12 @@ def build(circuit, state, n=128, n_seeds=32):
         if p in seen: continue
         seen.add(p)
         r=E.get_ratings(state,p,'Grass')
+        fm=FORM.get(p,{})
         field.append(dict(player=p, rank=int(rk),
                           serve=round(r['serve'],1), ret=round(r['ret'],1),
                           elo=round(r['elo'],1), n_grass=int(r['n']),
+                          form10=round(fm.get('form10',0.5),3), grass=round(fm.get('grass',0.5),3),
+                          ped=float(fm.get('ped',0.0)),
                           last_date=state['last_date'].get(p)))
         if len(field)>=n: break
     for i,f in enumerate(field):

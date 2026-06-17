@@ -1,310 +1,286 @@
 {
   "match_level": {
     "all_2021_2025": {
-      "label": "Wimbledon 2021-2025 (tutti)",
-      "raw": {
-        "n": 1270,
-        "brier": 0.2005,
-        "logloss": 0.5853,
-        "accuracy": 0.689
-      },
+      "label": "Wimbledon 2021-2025",
       "calibrated": {
         "n": 1270,
-        "brier": 0.2004,
-        "logloss": 0.585,
-        "accuracy": 0.6906
+        "brier": 0.1976,
+        "logloss": 0.5784,
+        "accuracy": 0.6874
       },
       "calibration_curve": [
         {
           "bin": "0.0-0.1",
-          "pred": 0.061,
-          "obs": 0.053,
-          "n": 38
+          "pred": 0.063,
+          "obs": 0.021,
+          "n": 47
         },
         {
           "bin": "0.1-0.2",
-          "pred": 0.162,
-          "obs": 0.165,
-          "n": 115
+          "pred": 0.147,
+          "obs": 0.183,
+          "n": 109
         },
         {
           "bin": "0.2-0.3",
-          "pred": 0.252,
-          "obs": 0.284,
-          "n": 134
+          "pred": 0.255,
+          "obs": 0.252,
+          "n": 147
         },
         {
           "bin": "0.3-0.4",
-          "pred": 0.349,
-          "obs": 0.347,
-          "n": 144
+          "pred": 0.353,
+          "obs": 0.328,
+          "n": 137
         },
         {
           "bin": "0.4-0.5",
-          "pred": 0.451,
-          "obs": 0.425,
-          "n": 186
+          "pred": 0.449,
+          "obs": 0.492,
+          "n": 185
         },
         {
           "bin": "0.5-0.6",
-          "pred": 0.551,
-          "obs": 0.553,
-          "n": 206
+          "pred": 0.549,
+          "obs": 0.519,
+          "n": 181
         },
         {
           "bin": "0.6-0.7",
-          "pred": 0.651,
-          "obs": 0.65,
-          "n": 177
+          "pred": 0.648,
+          "obs": 0.647,
+          "n": 167
         },
         {
           "bin": "0.7-0.8",
-          "pred": 0.743,
-          "obs": 0.778,
-          "n": 126
+          "pred": 0.748,
+          "obs": 0.771,
+          "n": 144
         },
         {
           "bin": "0.8-0.9",
-          "pred": 0.844,
+          "pred": 0.848,
           "obs": 0.833,
           "n": 108
         },
         {
           "bin": "0.9-1.0",
-          "pred": 0.941,
-          "obs": 0.861,
-          "n": 36
+          "pred": 0.938,
+          "obs": 0.867,
+          "n": 45
         }
       ]
     },
     "oos_2025": {
-      "label": "Out-of-sample 2025",
-      "raw": {
-        "n": 254,
-        "brier": 0.2074,
-        "logloss": 0.6023,
-        "accuracy": 0.6811
-      },
+      "label": "OOS 2025",
       "calibrated": {
         "n": 254,
-        "brier": 0.2077,
-        "logloss": 0.6039,
-        "accuracy": 0.685
+        "brier": 0.2094,
+        "logloss": 0.6071,
+        "accuracy": 0.6654
       },
       "calibration_curve": [
         {
           "bin": "0.0-0.1",
           "pred": 0.044,
           "obs": 0.0,
-          "n": 9
+          "n": 11
         },
         {
           "bin": "0.1-0.2",
-          "pred": 0.157,
-          "obs": 0.182,
+          "pred": 0.149,
+          "obs": 0.136,
           "n": 22
         },
         {
           "bin": "0.2-0.3",
-          "pred": 0.247,
-          "obs": 0.185,
-          "n": 27
+          "pred": 0.253,
+          "obs": 0.281,
+          "n": 32
         },
         {
           "bin": "0.3-0.4",
-          "pred": 0.347,
-          "obs": 0.462,
-          "n": 26
+          "pred": 0.354,
+          "obs": 0.5,
+          "n": 20
         },
         {
           "bin": "0.4-0.5",
-          "pred": 0.445,
-          "obs": 0.432,
-          "n": 37
+          "pred": 0.447,
+          "obs": 0.486,
+          "n": 35
         },
         {
           "bin": "0.5-0.6",
-          "pred": 0.544,
-          "obs": 0.59,
-          "n": 39
-        },
-        {
-          "bin": "0.6-0.7",
-          "pred": 0.656,
-          "obs": 0.71,
+          "pred": 0.552,
+          "obs": 0.516,
           "n": 31
         },
         {
+          "bin": "0.6-0.7",
+          "pred": 0.652,
+          "obs": 0.667,
+          "n": 39
+        },
+        {
           "bin": "0.7-0.8",
-          "pred": 0.739,
-          "obs": 0.722,
+          "pred": 0.747,
+          "obs": 0.694,
           "n": 36
         },
         {
           "bin": "0.8-0.9",
-          "pred": 0.84,
-          "obs": 0.72,
-          "n": 25
+          "pred": 0.851,
+          "obs": 0.792,
+          "n": 24
         },
         {
           "bin": "0.9-1.0",
-          "pred": 0.922,
+          "pred": 0.915,
           "obs": 0.5,
-          "n": 2
+          "n": 4
         }
       ]
     },
     "by_circuit_ATP": {
       "label": "ATP",
-      "raw": {
-        "n": 635,
-        "brier": 0.1903,
-        "logloss": 0.5605,
-        "accuracy": 0.7008
-      },
       "calibrated": {
         "n": 635,
-        "brier": 0.1895,
-        "logloss": 0.5579,
-        "accuracy": 0.7024
+        "brier": 0.1877,
+        "logloss": 0.5532,
+        "accuracy": 0.7055
       },
       "calibration_curve": [
         {
           "bin": "0.0-0.1",
-          "pred": 0.061,
-          "obs": 0.077,
-          "n": 26
+          "pred": 0.058,
+          "obs": 0.0,
+          "n": 30
         },
         {
           "bin": "0.1-0.2",
-          "pred": 0.161,
-          "obs": 0.129,
-          "n": 62
+          "pred": 0.148,
+          "obs": 0.15,
+          "n": 60
         },
         {
           "bin": "0.2-0.3",
-          "pred": 0.254,
-          "obs": 0.206,
-          "n": 68
+          "pred": 0.251,
+          "obs": 0.219,
+          "n": 73
         },
         {
           "bin": "0.3-0.4",
-          "pred": 0.353,
-          "obs": 0.369,
-          "n": 65
+          "pred": 0.354,
+          "obs": 0.328,
+          "n": 58
         },
         {
           "bin": "0.4-0.5",
-          "pred": 0.45,
-          "obs": 0.482,
-          "n": 85
+          "pred": 0.444,
+          "obs": 0.516,
+          "n": 95
         },
         {
           "bin": "0.5-0.6",
-          "pred": 0.551,
-          "obs": 0.579,
-          "n": 114
+          "pred": 0.55,
+          "obs": 0.533,
+          "n": 92
         },
         {
           "bin": "0.6-0.7",
-          "pred": 0.652,
-          "obs": 0.659,
-          "n": 88
+          "pred": 0.647,
+          "obs": 0.729,
+          "n": 85
         },
         {
           "bin": "0.7-0.8",
-          "pred": 0.742,
-          "obs": 0.754,
-          "n": 57
+          "pred": 0.748,
+          "obs": 0.729,
+          "n": 70
         },
         {
           "bin": "0.8-0.9",
-          "pred": 0.844,
-          "obs": 0.87,
-          "n": 54
+          "pred": 0.848,
+          "obs": 0.86,
+          "n": 50
         },
         {
           "bin": "0.9-1.0",
-          "pred": 0.942,
-          "obs": 0.938,
-          "n": 16
+          "pred": 0.939,
+          "obs": 0.909,
+          "n": 22
         }
       ]
     },
     "by_circuit_WTA": {
       "label": "WTA",
-      "raw": {
-        "n": 635,
-        "brier": 0.2108,
-        "logloss": 0.6101,
-        "accuracy": 0.6772
-      },
       "calibrated": {
         "n": 635,
-        "brier": 0.2113,
-        "logloss": 0.6121,
-        "accuracy": 0.6787
+        "brier": 0.2076,
+        "logloss": 0.6036,
+        "accuracy": 0.6693
       },
       "calibration_curve": [
         {
           "bin": "0.0-0.1",
-          "pred": 0.06,
-          "obs": 0.0,
-          "n": 12
+          "pred": 0.073,
+          "obs": 0.059,
+          "n": 17
         },
         {
           "bin": "0.1-0.2",
-          "pred": 0.162,
-          "obs": 0.208,
-          "n": 53
+          "pred": 0.147,
+          "obs": 0.224,
+          "n": 49
         },
         {
           "bin": "0.2-0.3",
-          "pred": 0.25,
-          "obs": 0.364,
-          "n": 66
+          "pred": 0.259,
+          "obs": 0.284,
+          "n": 74
         },
         {
           "bin": "0.3-0.4",
-          "pred": 0.346,
+          "pred": 0.352,
           "obs": 0.329,
           "n": 79
         },
         {
           "bin": "0.4-0.5",
-          "pred": 0.451,
-          "obs": 0.376,
-          "n": 101
+          "pred": 0.455,
+          "obs": 0.467,
+          "n": 90
         },
         {
           "bin": "0.5-0.6",
-          "pred": 0.552,
-          "obs": 0.522,
-          "n": 92
-        },
-        {
-          "bin": "0.6-0.7",
-          "pred": 0.649,
-          "obs": 0.64,
+          "pred": 0.547,
+          "obs": 0.506,
           "n": 89
         },
         {
+          "bin": "0.6-0.7",
+          "pred": 0.65,
+          "obs": 0.561,
+          "n": 82
+        },
+        {
           "bin": "0.7-0.8",
-          "pred": 0.744,
-          "obs": 0.797,
-          "n": 69
+          "pred": 0.747,
+          "obs": 0.811,
+          "n": 74
         },
         {
           "bin": "0.8-0.9",
-          "pred": 0.843,
-          "obs": 0.796,
-          "n": 54
+          "pred": 0.848,
+          "obs": 0.81,
+          "n": 58
         },
         {
           "bin": "0.9-1.0",
-          "pred": 0.94,
-          "obs": 0.8,
-          "n": 20
+          "pred": 0.936,
+          "obs": 0.826,
+          "n": 23
         }
       ]
     }
@@ -316,19 +292,19 @@
       "top3": [
         [
           "Djokovic N.",
-          0.533
+          0.608
         ],
         [
           "Federer R.",
-          0.136
+          0.14
         ],
         [
-          "Tsitsipas S.",
-          0.1
+          "Medvedev D.",
+          0.054
         ]
       ],
       "actual_winner": "Djokovic N.",
-      "winner_pretourney_prob": 0.533,
+      "winner_pretourney_prob": 0.608,
       "winner_rank_in_model": 1
     },
     {
@@ -337,19 +313,19 @@
       "top3": [
         [
           "Barty A.",
-          0.308
+          0.337
         ],
         [
           "Williams S.",
-          0.159
+          0.198
         ],
         [
           "Sabalenka A.",
-          0.11
+          0.057
         ]
       ],
       "actual_winner": "Barty A.",
-      "winner_pretourney_prob": 0.308,
+      "winner_pretourney_prob": 0.337,
       "winner_rank_in_model": 1
     },
     {
@@ -358,19 +334,19 @@
       "top3": [
         [
           "Djokovic N.",
-          0.373
+          0.56
         ],
         [
           "Nadal R.",
-          0.234
+          0.192
         ],
         [
           "Alcaraz C.",
-          0.098
+          0.044
         ]
       ],
       "actual_winner": "Djokovic N.",
-      "winner_pretourney_prob": 0.373,
+      "winner_pretourney_prob": 0.56,
       "winner_rank_in_model": 1
     },
     {
@@ -379,19 +355,19 @@
       "top3": [
         [
           "Swiatek I.",
-          0.523
+          0.39
         ],
         [
           "Jabeur O.",
-          0.122
+          0.227
         ],
         [
-          "Badosa P.",
-          0.057
+          "Kerber A.",
+          0.049
         ]
       ],
       "actual_winner": "Rybakina E.",
-      "winner_pretourney_prob": 0.002,
+      "winner_pretourney_prob": 0.005,
       "winner_rank_in_model": 20
     },
     {
@@ -400,19 +376,19 @@
       "top3": [
         [
           "Djokovic N.",
-          0.382
+          0.523
         ],
         [
           "Alcaraz C.",
-          0.347
+          0.298
         ],
         [
-          "Medvedev D.",
-          0.047
+          "Sinner J.",
+          0.044
         ]
       ],
       "actual_winner": "Alcaraz C.",
-      "winner_pretourney_prob": 0.347,
+      "winner_pretourney_prob": 0.298,
       "winner_rank_in_model": 2
     },
     {
@@ -421,104 +397,104 @@
       "top3": [
         [
           "Swiatek I.",
-          0.526
-        ],
-        [
-          "Sabalenka A.",
-          0.084
-        ],
-        [
-          "Pegula J.",
-          0.059
-        ]
-      ],
-      "actual_winner": "Vondrousova M.",
-      "winner_pretourney_prob": 0.002,
-      "winner_rank_in_model": 26
-    },
-    {
-      "year": 2024,
-      "circuit": "ATP",
-      "top3": [
-        [
-          "Djokovic N.",
-          0.353
-        ],
-        [
-          "Sinner J.",
-          0.239
-        ],
-        [
-          "Alcaraz C.",
-          0.196
-        ]
-      ],
-      "actual_winner": "Alcaraz C.",
-      "winner_pretourney_prob": 0.196,
-      "winner_rank_in_model": 3
-    },
-    {
-      "year": 2024,
-      "circuit": "WTA",
-      "top3": [
-        [
-          "Swiatek I.",
-          0.526
-        ],
-        [
-          "Gauff C.",
-          0.12
+          0.462
         ],
         [
           "Rybakina E.",
-          0.068
+          0.101
+        ],
+        [
+          "Kvitova P.",
+          0.082
         ]
       ],
-      "actual_winner": "Krejcikova B.",
+      "actual_winner": "Vondrousova M.",
       "winner_pretourney_prob": 0.001,
       "winner_rank_in_model": 30
     },
     {
+      "year": 2024,
+      "circuit": "ATP",
+      "top3": [
+        [
+          "Djokovic N.",
+          0.385
+        ],
+        [
+          "Alcaraz C.",
+          0.242
+        ],
+        [
+          "Sinner J.",
+          0.237
+        ]
+      ],
+      "actual_winner": "Alcaraz C.",
+      "winner_pretourney_prob": 0.242,
+      "winner_rank_in_model": 2
+    },
+    {
+      "year": 2024,
+      "circuit": "WTA",
+      "top3": [
+        [
+          "Swiatek I.",
+          0.479
+        ],
+        [
+          "Gauff C.",
+          0.094
+        ],
+        [
+          "Rybakina E.",
+          0.082
+        ]
+      ],
+      "actual_winner": "Krejcikova B.",
+      "winner_pretourney_prob": 0.002,
+      "winner_rank_in_model": 26
+    },
+    {
       "year": 2025,
       "circuit": "ATP",
       "top3": [
         [
-          "Sinner J.",
-          0.326
+          "Alcaraz C.",
+          0.402
         ],
         [
-          "Alcaraz C.",
-          0.289
+          "Sinner J.",
+          0.254
         ],
         [
           "Djokovic N.",
-          0.154
+          0.17
         ]
       ],
       "actual_winner": "Sinner J.",
-      "winner_pretourney_prob": 0.326,
-      "winner_rank_in_model": 1
+      "winner_pretourney_prob": 0.254,
+      "winner_rank_in_model": 2
     },
     {
       "year": 2025,
       "circuit": "WTA",
       "top3": [
         [
-          "Sabalenka A.",
-          0.203
-        ],
-        [
           "Swiatek I.",
-          0.174
+          0.19
         ],
         [
-          "Gauff C.",
-          0.126
+          "Sabalenka A.",
+          0.165
+        ],
+        [
+          "Paolini J.",
+          0.081
         ]
       ],
       "actual_winner": "Swiatek I.",
-      "winner_pretourney_prob": 0.174,
-      "winner_rank_in_model": 2
+      "winner_pretourney_prob": 0.19,
+      "winner_rank_in_model": 1
     }
   ]
 }

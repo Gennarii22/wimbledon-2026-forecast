@@ -1,7 +1,7 @@
 /* engine.js — math identica a pipeline/engine.py (per l'esploratore testa-a-testa lato client).
    I rating serve/ret/elo nei JSON sono GIA' efficaci (post-shrinkage), quindi qui non si ri-shrinka. */
 const WE = (function () {
-  let P = { beta: 0.42, platt_a: 1.0, platt_b: 0.0, c_rel: 150.0 };
+  let P = { beta: 0.42, platt_a: 1.0, platt_b: 0.0, c_rel: 150.0, c_form: 0.0, c_grass: 0.0, c_ped: 0.0 };
   function setParams(p) { P = Object.assign(P, p); }
 
   function expScore(ra, rb) { return 1 / (1 + Math.pow(10, (rb - ra) / 400)); }
@@ -34,18 +34,20 @@ const WE = (function () {
     return 1 / (1 + Math.exp(-z));
   }
   const rel = (n) => n / (n + P.c_rel);
-  function platt(p) {
-    p = Math.min(Math.max(p, 1e-9), 1 - 1e-9);
-    const z = Math.log(p / (1 - p));
-    return 1 / (1 + Math.exp(-(P.platt_a * z + P.platt_b)));
+  function finalProb(pBase, dForm, dGrass, dPed) {
+    pBase = Math.min(Math.max(pBase, 1e-9), 1 - 1e-9);
+    let z = Math.log(pBase / (1 - pBase));
+    z = P.platt_a * z + P.platt_b + P.c_form * dForm + P.c_grass * dGrass + P.c_ped * dPed;
+    return 1 / (1 + Math.exp(-z));
   }
-  /* a, b = oggetti giocatore {serve,ret,elo,n_match,rank}; bo = 5|3 */
+  /* a, b = oggetti giocatore {serve,ret,elo,n_match,rank,form10,grass,ped}; bo = 5|3 */
   function prob(a, b, bo) {
     const holdA = expScore(a.serve, b.ret), holdB = expScore(b.serve, a.ret);
     const pBc = matchFromSet(setProb(holdA, holdB), bo);
     const pRk = rankProb(a.rank, b.rank);
     const r = Math.min(rel(a.n_match), rel(b.n_match));
-    return platt(r * pBc + (1 - r) * pRk);
+    const base = r * pBc + (1 - r) * pRk;
+    return finalProb(base, (a.form10||0.5)-(b.form10||0.5), (a.grass||0.5)-(b.grass||0.5), (a.ped||0)-(b.ped||0));
   }
   return { setParams, prob, expScore };
 })();

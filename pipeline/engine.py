@@ -76,6 +76,15 @@ def platt(p, a=1.0, b=0.0):
     z = np.log(p / (1 - p))
     return 1.0 / (1.0 + np.exp(-(a * z + b)))
 
+def final_prob(p_base, dform, dgrass, dped, calib):
+    """Calibrazione + aggiustamento di forma in un colpo solo.
+    calib = (a, b, c_form, c_grass, c_ped). deltas = feat_A - feat_B (gia' orientati su A)."""
+    a, b, cf, cg, cp = calib
+    p = min(max(p_base, 1e-9), 1 - 1e-9)
+    z = np.log(p / (1 - p))
+    z = a * z + b + cf * dform + cg * dgrass + cp * dped
+    return 1.0 / (1.0 + np.exp(-z))
+
 def blended_raw(ra, rb, rank_a, rank_b, best_of, beta=None):
     """Probabilita' grezza (pre-Platt) con blend rank-based per affidabilita'."""
     hold_a = exp_score(ra['serve'], rb['ret']); hold_b = exp_score(rb['serve'], ra['ret'])

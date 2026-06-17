@@ -58,7 +58,8 @@ async function boot() {
     fetch("data/backtest.json").then(r => r.json()),
   ]);
   DATA.men = men; DATA.women = women; DATA.bt = bt; META = meta;
-  WE.setParams({ beta: meta.params.beta, platt_a: meta.params.platt_a, platt_b: meta.params.platt_b, c_rel: meta.params.c_rel });
+  WE.setParams({ beta: meta.params.beta, platt_a: meta.params.platt_a, platt_b: meta.params.platt_b,
+    c_rel: meta.params.c_rel, c_form: meta.params.c_form || 0, c_grass: meta.params.c_grass || 0, c_ped: meta.params.c_ped || 0 });
   bindUI();
   applyLang();
   renderMeta();
