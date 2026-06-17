@@ -1,0 +1,178 @@
+{
+  "Wimbledon 2021-2025": {
+    "n_with_odds": 1258,
+    "betting": {
+      "0.0": {
+        "n_bets": 1139,
+        "hit": 0.382,
+        "yield_flat": -4.45,
+        "profit_u": -50.7,
+        "kelly_growth": -92.8,
+        "avg_odds": 4.37
+      },
+      "0.02": {
+        "n_bets": 1057,
+        "hit": 0.36,
+        "yield_flat": -5.06,
+        "profit_u": -53.5,
+        "kelly_growth": -93.0,
+        "avg_odds": 4.56
+      },
+      "0.05": {
+        "n_bets": 949,
+        "hit": 0.334,
+        "yield_flat": -6.38,
+        "profit_u": -60.6,
+        "kelly_growth": -92.6,
+        "avg_odds": 4.82
+      },
+      "0.1": {
+        "n_bets": 802,
+        "hit": 0.3,
+        "yield_flat": -5.81,
+        "profit_u": -46.6,
+        "kelly_growth": -91.5,
+        "avg_odds": 5.29
+      }
+    },
+    "benchmark": {
+      "n": 1258,
+      "acc_model": 0.692,
+      "acc_market": 0.723,
+      "brier_model": 0.1989,
+      "brier_market": 0.1843
+    }
+  },
+  "Wimbledon 2025 (OOS)": {
+    "n_with_odds": 246,
+    "betting": {
+      "0.0": {
+        "n_bets": 229,
+        "hit": 0.406,
+        "yield_flat": 19.22,
+        "profit_u": 44.0,
+        "kelly_growth": 190.7,
+        "avg_odds": 4.3
+      },
+      "0.02": {
+        "n_bets": 208,
+        "hit": 0.375,
+        "yield_flat": 20.43,
+        "profit_u": 42.5,
+        "kelly_growth": 191.3,
+        "avg_odds": 4.57
+      },
+      "0.05": {
+        "n_bets": 185,
+        "hit": 0.362,
+        "yield_flat": 19.7,
+        "profit_u": 36.4,
+        "kelly_growth": 210.2,
+        "avg_odds": 4.76
+      },
+      "0.1": {
+        "n_bets": 153,
+        "hit": 0.353,
+        "yield_flat": 31.31,
+        "profit_u": 47.9,
+        "kelly_growth": 267.2,
+        "avg_odds": 5.27
+      }
+    },
+    "benchmark": {
+      "n": 246,
+      "acc_model": 0.683,
+      "acc_market": 0.691,
+      "brier_model": 0.2105,
+      "brier_market": 0.2096
+    }
+  },
+  "Tutta erba 2021-2025": {
+    "n_with_odds": 3076,
+    "betting": {
+      "0.0": {
+        "n_bets": 2765,
+        "hit": 0.422,
+        "yield_flat": -2.54,
+        "profit_u": -70.2,
+        "kelly_growth": -99.1,
+        "avg_odds": 3.4
+      },
+      "0.02": {
+        "n_bets": 2552,
+        "hit": 0.408,
+        "yield_flat": -2.65,
+        "profit_u": -67.7,
+        "kelly_growth": -99.1,
+        "avg_odds": 3.52
+      },
+      "0.05": {
+        "n_bets": 2227,
+        "hit": 0.385,
+        "yield_flat": -3.37,
+        "profit_u": -75.0,
+        "kelly_growth": -98.8,
+        "avg_odds": 3.72
+      },
+      "0.1": {
+        "n_bets": 1836,
+        "hit": 0.354,
+        "yield_flat": -4.06,
+        "profit_u": -74.4,
+        "kelly_growth": -98.3,
+        "avg_odds": 4.05
+      }
+    },
+    "benchmark": {
+      "n": 3076,
+      "acc_model": 0.65,
+      "acc_market": 0.673,
+      "brier_model": 0.2173,
+      "brier_market": 0.2045
+    }
+  },
+  "Erba 2025 (OOS)": {
+    "n_with_odds": 588,
+    "betting": {
+      "0.0": {
+        "n_bets": 535,
+        "hit": 0.43,
+        "yield_flat": 6.53,
+        "profit_u": 34.9,
+        "kelly_growth": 29.2,
+        "avg_odds": 3.41
+      },
+      "0.02": {
+        "n_bets": 487,
+        "hit": 0.419,
+        "yield_flat": 8.17,
+        "profit_u": 39.8,
+        "kelly_growth": 33.5,
+        "avg_odds": 3.56
+      },
+      "0.05": {
+        "n_bets": 414,
+        "hit": 0.399,
+        "yield_flat": 8.01,
+        "profit_u": 33.2,
+        "kelly_growth": 31.8,
+        "avg_odds": 3.75
+      },
+      "0.1": {
+        "n_bets": 340,
+        "hit": 0.365,
+        "yield_flat": 7.44,
+        "profit_u": 25.3,
+        "kelly_growth": 36.0,
+        "avg_odds": 4.08
+      }
+    },
+    "benchmark": {
+      "n": 588,
+      "acc_model": 0.638,
+      "acc_market": 0.677,
+      "brier_model": 0.2246,
+      "brier_market": 0.2157
+    }
+  }
+}

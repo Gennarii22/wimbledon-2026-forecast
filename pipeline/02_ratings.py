@@ -29,6 +29,16 @@ def exp_score(ra, rb):
 def k_sr(g):  # serve/return Elo K
     return 8.0 if g < 100 else 4.0
 
+def k_layoff(gap_days):
+    """K maggiorato dopo una lunga assenza (infortunio/pausa): piu' incertezza sul rating.
+    Idea da Glicko (RD) e confermata da Green Code. Nessun effetto entro 60 giorni."""
+    if gap_days is None or gap_days <= 60: return 1.0
+    return min(1.0 + (gap_days - 60) / 365.0 * 0.6, 1.6)  # fino a +60% dopo ~1 anno
+
+def _pdate(s):
+    try: return datetime.strptime(str(s)[:10], '%Y-%m-%d')
+    except: return None
+
 def holds_breaks(wg, lg):
     """Stima hold/break del vincitore-set da un punteggio set (wg-lg)."""
     if wg is None or lg is None: return 0,0,0,0
@@ -89,13 +99,20 @@ def main():
             psw=r['psw'], psl=r['psl']
         ))
 
-        # --- update Elo generale + superficie ---
+        # --- layoff: giorni dall'ultimo match (last_date contiene la data PRECEDENTE) ---
+        md = _pdate(r['date'])
+        def _gap(p):
+            ld = _pdate(last_date.get(p)) if last_date.get(p) else None
+            return (md - ld).days if (md and ld) else None
+        lf_w, lf_l = k_layoff(_gap(w)), k_layoff(_gap(l))
+
+        # --- update Elo generale + superficie (K scalato per layoff) ---
         mw, ml = n_match.get(w,0), n_match.get(l,0)
-        kw, kl = k_dyn(mw), k_dyn(ml)
+        kw, kl = k_dyn(mw)*lf_w, k_dyn(ml)*lf_l
         ew = exp_score(ewg, elg)
         elo_g[w] = ewg + kw*(1-ew); elo_g[l] = elg + kl*(0-(1-ew))
         ms_w, ms_l = n_surf.get((w,surf),0), n_surf.get((l,surf),0)
-        kws, kls = k_dyn(ms_w), k_dyn(ms_l)
+        kws, kls = k_dyn(ms_w)*lf_w, k_dyn(ms_l)*lf_l
         ews_e = exp_score(ews, els)
         elo_s[(w,surf)] = ews + kws*(1-ews_e); elo_s[(l,surf)] = els + kls*(0-(1-ews_e))
 
