@@ -1,0 +1,1282 @@
+[
+  {
+    "player": "Sinner J.",
+    "rank": 1,
+    "serve": 1927.0,
+    "ret": 1503.3,
+    "elo": 2160.2,
+    "n_grass": 39,
+    "last_date": "2026-05-28",
+    "seed": 1
+  },
+  {
+    "player": "Alcaraz C.",
+    "rank": 2,
+    "serve": 1929.0,
+    "ret": 1512.4,
+    "elo": 2187.9,
+    "n_grass": 39,
+    "last_date": "2026-04-16",
+    "seed": 2
+  },
+  {
+    "player": "Zverev A.",
+    "rank": 3,
+    "serve": 1857.7,
+    "ret": 1407.9,
+    "elo": 1890.7,
+    "n_grass": 68,
+    "last_date": "2026-06-07",
+    "seed": 3
+  },
+  {
+    "player": "Djokovic N.",
+    "rank": 4,
+    "serve": 1996.2,
+    "ret": 1472.2,
+    "elo": 2181.3,
+    "n_grass": 141,
+    "last_date": "2026-05-29",
+    "seed": 4
+  },
+  {
+    "player": "Auger-Aliassime F.",
+    "rank": 4,
+    "serve": 1831.3,
+    "ret": 1347.5,
+    "elo": 1778.6,
+    "n_grass": 48,
+    "last_date": "2026-06-12",
+    "seed": 5
+  },
+  {
+    "player": "Shelton B.",
+    "rank": 5,
+    "serve": 1849.5,
+    "ret": 1325.3,
+    "elo": 1890.7,
+    "n_grass": 27,
+    "last_date": "2026-06-14",
+    "seed": 6
+  },
+  {
+    "player": "De Minaur A.",
+    "rank": 6,
+    "serve": 1828.3,
+    "ret": 1396.4,
+    "elo": 1880.4,
+    "n_grass": 60,
+    "last_date": "2026-06-14",
+    "seed": 7
+  },
+  {
+    "player": "Medvedev D.",
+    "rank": 8,
+    "serve": 1843.5,
+    "ret": 1373.3,
+    "elo": 1885.7,
+    "n_grass": 79,
+    "last_date": "2026-06-13",
+    "seed": 8
+  },
+  {
+    "player": "Fritz T.",
+    "rank": 9,
+    "serve": 1885.3,
+    "ret": 1327.7,
+    "elo": 1932.0,
+    "n_grass": 75,
+    "last_date": "2026-06-14",
+    "seed": 9
+  },
+  {
+    "player": "Musetti L.",
+    "rank": 10,
+    "serve": 1800.7,
+    "ret": 1399.9,
+    "elo": 1880.4,
+    "n_grass": 29,
+    "last_date": "2026-05-12",
+    "seed": 10
+  },
+  {
+    "player": "Bublik A.",
+    "rank": 11,
+    "serve": 1798.2,
+    "ret": 1357.5,
+    "elo": 1857.9,
+    "n_grass": 61,
+    "last_date": "2026-06-13",
+    "seed": 11
+  },
+  {
+    "player": "Lehecka J.",
+    "rank": 12,
+    "serve": 1788.4,
+    "ret": 1391.2,
+    "elo": 1856.9,
+    "n_grass": 23,
+    "last_date": "2026-06-13",
+    "seed": 12
+  },
+  {
+    "player": "Rublev A.",
+    "rank": 13,
+    "serve": 1831.4,
+    "ret": 1360.4,
+    "elo": 1831.9,
+    "n_grass": 35,
+    "last_date": "2026-05-31",
+    "seed": 13
+  },
+  {
+    "player": "Cobolli F.",
+    "rank": 14,
+    "serve": 1782.9,
+    "ret": 1370.3,
+    "elo": 1852.0,
+    "n_grass": 16,
+    "last_date": "2026-06-07",
+    "seed": 14
+  },
+  {
+    "player": "Khachanov K.",
+    "rank": 15,
+    "serve": 1842.2,
+    "ret": 1303.6,
+    "elo": 1779.6,
+    "n_grass": 50,
+    "last_date": "2026-05-29",
+    "seed": 15
+  },
+  {
+    "player": "Ruud C.",
+    "rank": 16,
+    "serve": 1792.1,
+    "ret": 1418.8,
+    "elo": 1790.8,
+    "n_grass": 14,
+    "last_date": "2026-05-31",
+    "seed": 16
+  },
+  {
+    "player": "Fils A.",
+    "rank": 17,
+    "serve": 1801.4,
+    "ret": 1428.4,
+    "elo": 1943.1,
+    "n_grass": 11,
+    "last_date": "2026-05-09",
+    "seed": 17
+  },
+  {
+    "player": "Darderi L.",
+    "rank": 17,
+    "serve": 1740.2,
+    "ret": 1363.9,
+    "elo": 1736.2,
+    "n_grass": 11,
+    "last_date": "2026-05-28",
+    "seed": 18
+  },
+  {
+    "player": "Tien L.",
+    "rank": 18,
+    "serve": 1761.3,
+    "ret": 1404.6,
+    "elo": 1876.4,
+    "n_grass": 7,
+    "last_date": "2026-05-30",
+    "seed": 19
+  },
+  {
+    "player": "Vacherot V.",
+    "rank": 19,
+    "serve": 1777.5,
+    "ret": 1417.7,
+    "elo": 1902.3,
+    "n_grass": 0,
+    "last_date": "2026-05-28",
+    "seed": 20
+  },
+  {
+    "player": "Paul T.",
+    "rank": 21,
+    "serve": 1828.2,
+    "ret": 1375.3,
+    "elo": 1850.9,
+    "n_grass": 39,
+    "last_date": "2026-05-29",
+    "seed": 21
+  },
+  {
+    "player": "Davidovich Fokina A.",
+    "rank": 22,
+    "serve": 1758.6,
+    "ret": 1355.1,
+    "elo": 1711.1,
+    "n_grass": 24,
+    "last_date": "2026-06-08",
+    "seed": 22
+  },
+  {
+    "player": "Norrie C.",
+    "rank": 24,
+    "serve": 1795.1,
+    "ret": 1341.6,
+    "elo": 1769.5,
+    "n_grass": 48,
+    "last_date": "2026-05-26",
+    "seed": 23
+  },
+  {
+    "player": "Rinderknech A.",
+    "rank": 24,
+    "serve": 1786.8,
+    "ret": 1300.2,
+    "elo": 1712.3,
+    "n_grass": 30,
+    "last_date": "2026-06-11",
+    "seed": 24
+  },
+  {
+    "player": "Cerundolo F.",
+    "rank": 26,
+    "serve": 1756.4,
+    "ret": 1406.8,
+    "elo": 1724.1,
+    "n_grass": 17,
+    "last_date": "2026-05-30",
+    "seed": 25
+  },
+  {
+    "player": "Tiafoe F.",
+    "rank": 26,
+    "serve": 1797.6,
+    "ret": 1321.2,
+    "elo": 1735.8,
+    "n_grass": 47,
+    "last_date": "2026-06-12",
+    "seed": 26
+  },
+  {
+    "player": "Mensik J.",
+    "rank": 27,
+    "serve": 1781.8,
+    "ret": 1402.8,
+    "elo": 1829.3,
+    "n_grass": 13,
+    "last_date": "2026-06-05",
+    "seed": 27
+  },
+  {
+    "player": "Draper J.",
+    "rank": 28,
+    "serve": 1825.9,
+    "ret": 1403.2,
+    "elo": 1886.8,
+    "n_grass": 28,
+    "last_date": "2026-04-13",
+    "seed": 28
+  },
+  {
+    "player": "Etcheverry T.",
+    "rank": 28,
+    "serve": 1778.4,
+    "ret": 1312.8,
+    "elo": 1680.0,
+    "n_grass": 14,
+    "last_date": "2026-05-24",
+    "seed": 29
+  },
+  {
+    "player": "Jodar R.",
+    "rank": 29,
+    "serve": 1734.7,
+    "ret": 1501.2,
+    "elo": 2024.1,
+    "n_grass": 0,
+    "last_date": "2026-06-02",
+    "seed": 30
+  },
+  {
+    "player": "Fonseca J.",
+    "rank": 30,
+    "serve": 1809.5,
+    "ret": 1402.9,
+    "elo": 1878.5,
+    "n_grass": 7,
+    "last_date": "2026-06-02",
+    "seed": 31
+  },
+  {
+    "player": "Buse I.",
+    "rank": 31,
+    "serve": 1719.6,
+    "ret": 1398.9,
+    "elo": 1863.6,
+    "n_grass": 0,
+    "last_date": "2026-05-25",
+    "seed": 32
+  },
+  {
+    "player": "Humbert U.",
+    "rank": 33,
+    "serve": 1792.4,
+    "ret": 1308.0,
+    "elo": 1681.0,
+    "n_grass": 55,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Nakashima B.",
+    "rank": 35,
+    "serve": 1803.2,
+    "ret": 1324.0,
+    "elo": 1725.2,
+    "n_grass": 35,
+    "last_date": "2026-05-30",
+    "seed": null
+  },
+  {
+    "player": "Tabilo A.",
+    "rank": 36,
+    "serve": 1754.8,
+    "ret": 1367.8,
+    "elo": 1783.7,
+    "n_grass": 14,
+    "last_date": "2026-06-01",
+    "seed": null
+  },
+  {
+    "player": "Moutet C.",
+    "rank": 36,
+    "serve": 1727.7,
+    "ret": 1344.3,
+    "elo": 1701.1,
+    "n_grass": 28,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Blockx A.",
+    "rank": 37,
+    "serve": 1728.5,
+    "ret": 1389.2,
+    "elo": 1854.6,
+    "n_grass": 1,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Navone M.",
+    "rank": 38,
+    "serve": 1740.9,
+    "ret": 1391.4,
+    "elo": 1769.1,
+    "n_grass": 5,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Bergs Z.",
+    "rank": 40,
+    "serve": 1732.7,
+    "ret": 1299.5,
+    "elo": 1632.7,
+    "n_grass": 13,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Griekspoor T.",
+    "rank": 41,
+    "serve": 1763.6,
+    "ret": 1319.7,
+    "elo": 1753.4,
+    "n_grass": 34,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Michelsen A.",
+    "rank": 42,
+    "serve": 1739.5,
+    "ret": 1356.4,
+    "elo": 1749.1,
+    "n_grass": 25,
+    "last_date": "2026-05-29",
+    "seed": null
+  },
+  {
+    "player": "Shapovalov D.",
+    "rank": 42,
+    "serve": 1750.8,
+    "ret": 1317.9,
+    "elo": 1627.1,
+    "n_grass": 46,
+    "last_date": "2026-06-08",
+    "seed": null
+  },
+  {
+    "player": "Machac T.",
+    "rank": 43,
+    "serve": 1774.9,
+    "ret": 1376.9,
+    "elo": 1781.7,
+    "n_grass": 9,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Munar J.",
+    "rank": 44,
+    "serve": 1711.8,
+    "ret": 1359.3,
+    "elo": 1662.8,
+    "n_grass": 21,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Mannarino A.",
+    "rank": 46,
+    "serve": 1777.9,
+    "ret": 1289.1,
+    "elo": 1717.7,
+    "n_grass": 130,
+    "last_date": "2026-06-13",
+    "seed": null
+  },
+  {
+    "player": "Cilic M.",
+    "rank": 47,
+    "serve": 1867.8,
+    "ret": 1331.3,
+    "elo": 1874.8,
+    "n_grass": 117,
+    "last_date": "2026-06-13",
+    "seed": null
+  },
+  {
+    "player": "Kecmanovic M.",
+    "rank": 48,
+    "serve": 1747.7,
+    "ret": 1299.1,
+    "elo": 1641.2,
+    "n_grass": 37,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Borges N.",
+    "rank": 50,
+    "serve": 1758.8,
+    "ret": 1331.7,
+    "elo": 1683.8,
+    "n_grass": 17,
+    "last_date": "2026-06-12",
+    "seed": null
+  },
+  {
+    "player": "Quinn E.",
+    "rank": 50,
+    "serve": 1687.5,
+    "ret": 1331.7,
+    "elo": 1595.5,
+    "n_grass": 8,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Atmane T.",
+    "rank": 53,
+    "serve": 1714.6,
+    "ret": 1364.5,
+    "elo": 1712.4,
+    "n_grass": 1,
+    "last_date": "2026-06-08",
+    "seed": null
+  },
+  {
+    "player": "Diallo G.",
+    "rank": 54,
+    "serve": 1699.1,
+    "ret": 1369.0,
+    "elo": 1669.0,
+    "n_grass": 15,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Van De Zandschulp B.",
+    "rank": 55,
+    "serve": 1740.6,
+    "ret": 1325.2,
+    "elo": 1652.1,
+    "n_grass": 22,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Cerundolo J.M.",
+    "rank": 56,
+    "serve": 1739.9,
+    "ret": 1333.3,
+    "elo": 1709.2,
+    "n_grass": 1,
+    "last_date": "2026-06-01",
+    "seed": null
+  },
+  {
+    "player": "Medjedovic H.",
+    "rank": 58,
+    "serve": 1725.9,
+    "ret": 1361.9,
+    "elo": 1727.7,
+    "n_grass": 7,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Landaluce M.",
+    "rank": 58,
+    "serve": 1718.9,
+    "ret": 1342.3,
+    "elo": 1735.6,
+    "n_grass": 2,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Hanfmann Y.",
+    "rank": 59,
+    "serve": 1744.8,
+    "ret": 1309.2,
+    "elo": 1637.4,
+    "n_grass": 21,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Ugo Carabelli C.",
+    "rank": 59,
+    "serve": 1678.7,
+    "ret": 1314.5,
+    "elo": 1692.4,
+    "n_grass": 3,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Tirante T.A.",
+    "rank": 60,
+    "serve": 1745.1,
+    "ret": 1388.8,
+    "elo": 1844.5,
+    "n_grass": 0,
+    "last_date": "2026-05-29",
+    "seed": null
+  },
+  {
+    "player": "Marozsan F.",
+    "rank": 61,
+    "serve": 1717.3,
+    "ret": 1339.0,
+    "elo": 1625.5,
+    "n_grass": 12,
+    "last_date": "2026-06-08",
+    "seed": null
+  },
+  {
+    "player": "Popyrin A.",
+    "rank": 61,
+    "serve": 1745.0,
+    "ret": 1304.0,
+    "elo": 1609.1,
+    "n_grass": 24,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Collignon R.",
+    "rank": 62,
+    "serve": 1716.5,
+    "ret": 1382.1,
+    "elo": 1800.6,
+    "n_grass": 1,
+    "last_date": "2026-05-30",
+    "seed": null
+  },
+  {
+    "player": "Baez S.",
+    "rank": 64,
+    "serve": 1664.7,
+    "ret": 1334.7,
+    "elo": 1603.8,
+    "n_grass": 11,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Kopriva V.",
+    "rank": 66,
+    "serve": 1692.0,
+    "ret": 1387.7,
+    "elo": 1759.3,
+    "n_grass": 2,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Burruchaga R.",
+    "rank": 68,
+    "serve": 1660.7,
+    "ret": 1401.6,
+    "elo": 1701.7,
+    "n_grass": 0,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Kovacevic A.",
+    "rank": 69,
+    "serve": 1719.3,
+    "ret": 1281.3,
+    "elo": 1596.5,
+    "n_grass": 8,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Sonego L.",
+    "rank": 70,
+    "serve": 1774.4,
+    "ret": 1311.0,
+    "elo": 1678.5,
+    "n_grass": 47,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Vallejo D.",
+    "rank": 71,
+    "serve": 1662.6,
+    "ret": 1413.0,
+    "elo": 1715.9,
+    "n_grass": 0,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Prizmic D.",
+    "rank": 72,
+    "serve": 1714.9,
+    "ret": 1409.1,
+    "elo": 1793.5,
+    "n_grass": 0,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Brooksby J.",
+    "rank": 73,
+    "serve": 1692.5,
+    "ret": 1362.6,
+    "elo": 1670.5,
+    "n_grass": 21,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Royer V.",
+    "rank": 74,
+    "serve": 1693.5,
+    "ret": 1369.1,
+    "elo": 1556.3,
+    "n_grass": 2,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Fucsovics M.",
+    "rank": 75,
+    "serve": 1745.8,
+    "ret": 1322.4,
+    "elo": 1736.2,
+    "n_grass": 42,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Majchrzak K.",
+    "rank": 76,
+    "serve": 1743.8,
+    "ret": 1383.4,
+    "elo": 1834.4,
+    "n_grass": 16,
+    "last_date": "2026-06-14",
+    "seed": null
+  },
+  {
+    "player": "Opelka R.",
+    "rank": 76,
+    "serve": 1764.7,
+    "ret": 1255.3,
+    "elo": 1651.4,
+    "n_grass": 25,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Struff J.L.",
+    "rank": 77,
+    "serve": 1800.5,
+    "ret": 1267.1,
+    "elo": 1700.4,
+    "n_grass": 64,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Bellucci M.",
+    "rank": 78,
+    "serve": 1691.8,
+    "ret": 1349.7,
+    "elo": 1673.6,
+    "n_grass": 10,
+    "last_date": "2026-06-12",
+    "seed": null
+  },
+  {
+    "player": "Tsitsipas S.",
+    "rank": 79,
+    "serve": 1812.6,
+    "ret": 1293.5,
+    "elo": 1689.9,
+    "n_grass": 42,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Duckworth J.",
+    "rank": 79,
+    "serve": 1736.2,
+    "ret": 1267.0,
+    "elo": 1569.2,
+    "n_grass": 35,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Trungelliti M.",
+    "rank": 81,
+    "serve": 1696.1,
+    "ret": 1301.9,
+    "elo": 1605.7,
+    "n_grass": 1,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Svajda Z.",
+    "rank": 85,
+    "serve": 1717.2,
+    "ret": 1329.3,
+    "elo": 1680.2,
+    "n_grass": 1,
+    "last_date": "2026-06-01",
+    "seed": null
+  },
+  {
+    "player": "Altmaier D.",
+    "rank": 85,
+    "serve": 1704.9,
+    "ret": 1286.3,
+    "elo": 1570.8,
+    "n_grass": 19,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Merida Aguilar D.",
+    "rank": 86,
+    "serve": 1640.6,
+    "ret": 1415.9,
+    "elo": 1697.4,
+    "n_grass": 0,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Dzumhur D.",
+    "rank": 87,
+    "serve": 1688.6,
+    "ret": 1312.2,
+    "elo": 1577.7,
+    "n_grass": 21,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Giron M.",
+    "rank": 88,
+    "serve": 1749.9,
+    "ret": 1297.6,
+    "elo": 1698.4,
+    "n_grass": 39,
+    "last_date": "2026-06-12",
+    "seed": null
+  },
+  {
+    "player": "Shevchenko A.",
+    "rank": 88,
+    "serve": 1655.1,
+    "ret": 1317.1,
+    "elo": 1660.3,
+    "n_grass": 5,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Carreno Busta P.",
+    "rank": 89,
+    "serve": 1725.7,
+    "ret": 1335.2,
+    "elo": 1658.5,
+    "n_grass": 17,
+    "last_date": "2026-05-31",
+    "seed": null
+  },
+  {
+    "player": "Kypson P.",
+    "rank": 89,
+    "serve": 1639.6,
+    "ret": 1344.9,
+    "elo": 1417.6,
+    "n_grass": 0,
+    "last_date": "2026-05-06",
+    "seed": null
+  },
+  {
+    "player": "Spizzirri E.",
+    "rank": 91,
+    "serve": 1695.1,
+    "ret": 1398.4,
+    "elo": 1738.0,
+    "n_grass": 3,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Halys Q.",
+    "rank": 92,
+    "serve": 1736.2,
+    "ret": 1309.7,
+    "elo": 1610.4,
+    "n_grass": 18,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Mpetshi G.",
+    "rank": 93,
+    "serve": 1771.4,
+    "ret": 1289.6,
+    "elo": 1656.4,
+    "n_grass": 15,
+    "last_date": "2026-06-12",
+    "seed": null
+  },
+  {
+    "player": "Nava E.",
+    "rank": 94,
+    "serve": 1692.1,
+    "ret": 1319.5,
+    "elo": 1652.5,
+    "n_grass": 1,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Hurkacz H.",
+    "rank": 96,
+    "serve": 1859.5,
+    "ret": 1321.2,
+    "elo": 1779.9,
+    "n_grass": 42,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Vukic A.",
+    "rank": 96,
+    "serve": 1707.3,
+    "ret": 1269.4,
+    "elo": 1583.4,
+    "n_grass": 23,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Walton A.",
+    "rank": 97,
+    "serve": 1719.9,
+    "ret": 1335.5,
+    "elo": 1610.2,
+    "n_grass": 6,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Bonzi B.",
+    "rank": 99,
+    "serve": 1747.5,
+    "ret": 1312.7,
+    "elo": 1678.0,
+    "n_grass": 26,
+    "last_date": "2026-06-12",
+    "seed": null
+  },
+  {
+    "player": "Van Assche L.",
+    "rank": 100,
+    "serve": 1675.2,
+    "ret": 1309.5,
+    "elo": 1595.8,
+    "n_grass": 4,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Wu Y.",
+    "rank": 101,
+    "serve": 1710.6,
+    "ret": 1346.2,
+    "elo": 1645.1,
+    "n_grass": 6,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Comesana F.",
+    "rank": 102,
+    "serve": 1727.8,
+    "ret": 1299.4,
+    "elo": 1631.6,
+    "n_grass": 5,
+    "last_date": "2026-05-30",
+    "seed": null
+  },
+  {
+    "player": "Arnaldi M.",
+    "rank": 104,
+    "serve": 1743.7,
+    "ret": 1335.4,
+    "elo": 1717.5,
+    "n_grass": 6,
+    "last_date": "2026-06-05",
+    "seed": null
+  },
+  {
+    "player": "Shimabukuro S.",
+    "rank": 104,
+    "serve": 1610.5,
+    "ret": 1415.9,
+    "elo": 1656.0,
+    "n_grass": 4,
+    "last_date": "2026-06-13",
+    "seed": null
+  },
+  {
+    "player": "Berrettini M.",
+    "rank": 105,
+    "serve": 1827.6,
+    "ret": 1373.2,
+    "elo": 1875.6,
+    "n_grass": 53,
+    "last_date": "2026-06-03",
+    "seed": null
+  },
+  {
+    "player": "De Jong J.",
+    "rank": 106,
+    "serve": 1721.7,
+    "ret": 1364.3,
+    "elo": 1674.4,
+    "n_grass": 5,
+    "last_date": "2026-05-31",
+    "seed": null
+  },
+  {
+    "player": "Hijikata R.",
+    "rank": 106,
+    "serve": 1687.0,
+    "ret": 1311.2,
+    "elo": 1595.7,
+    "n_grass": 20,
+    "last_date": "2026-06-11",
+    "seed": null
+  },
+  {
+    "player": "Droguet T.",
+    "rank": 107,
+    "serve": 1671.6,
+    "ret": 1387.6,
+    "elo": 1685.6,
+    "n_grass": 0,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Wong C.",
+    "rank": 109,
+    "serve": 1651.5,
+    "ret": 1338.6,
+    "elo": 1656.7,
+    "n_grass": 1,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Ofner S.",
+    "rank": 112,
+    "serve": 1719.1,
+    "ret": 1308.5,
+    "elo": 1630.3,
+    "n_grass": 19,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Maestrelli F.",
+    "rank": 112,
+    "serve": 1575.7,
+    "ret": 1423.4,
+    "elo": 1474.6,
+    "n_grass": 0,
+    "last_date": "2026-05-07",
+    "seed": null
+  },
+  {
+    "player": "Wawrinka S.",
+    "rank": 113,
+    "serve": 1793.6,
+    "ret": 1270.6,
+    "elo": 1644.5,
+    "n_grass": 67,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Garin C.",
+    "rank": 114,
+    "serve": 1738.8,
+    "ret": 1295.8,
+    "elo": 1653.5,
+    "n_grass": 21,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Damm M.",
+    "rank": 114,
+    "serve": 1707.6,
+    "ret": 1290.7,
+    "elo": 1605.7,
+    "n_grass": 14,
+    "last_date": "2026-06-10",
+    "seed": null
+  },
+  {
+    "player": "Faria J.",
+    "rank": 115,
+    "serve": 1669.4,
+    "ret": 1372.9,
+    "elo": 1655.2,
+    "n_grass": 1,
+    "last_date": "2026-05-30",
+    "seed": null
+  },
+  {
+    "player": "Bautista Agut R.",
+    "rank": 116,
+    "serve": 1764.7,
+    "ret": 1339.9,
+    "elo": 1709.7,
+    "n_grass": 67,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Svrcina D.",
+    "rank": 116,
+    "serve": 1624.2,
+    "ret": 1425.5,
+    "elo": 1667.9,
+    "n_grass": 0,
+    "last_date": "2026-05-07",
+    "seed": null
+  },
+  {
+    "player": "Basilashvili N.",
+    "rank": 117,
+    "serve": 1714.0,
+    "ret": 1294.0,
+    "elo": 1655.1,
+    "n_grass": 35,
+    "last_date": "2026-05-12",
+    "seed": null
+  },
+  {
+    "player": "Gaston H.",
+    "rank": 118,
+    "serve": 1673.0,
+    "ret": 1298.7,
+    "elo": 1548.1,
+    "n_grass": 7,
+    "last_date": "2026-05-28",
+    "seed": null
+  },
+  {
+    "player": "Llamas Ruiz P.",
+    "rank": 122,
+    "serve": 1657.1,
+    "ret": 1382.4,
+    "elo": 1703.7,
+    "n_grass": 0,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Pellegrino A.",
+    "rank": 124,
+    "serve": 1646.9,
+    "ret": 1404.1,
+    "elo": 1765.1,
+    "n_grass": 0,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Fearnley J.",
+    "rank": 125,
+    "serve": 1676.7,
+    "ret": 1376.9,
+    "elo": 1552.5,
+    "n_grass": 10,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "McDonald M.",
+    "rank": 125,
+    "serve": 1637.4,
+    "ret": 1405.3,
+    "elo": 1612.9,
+    "n_grass": 5,
+    "last_date": "2026-04-01",
+    "seed": null
+  },
+  {
+    "player": "Martinez P.",
+    "rank": 125,
+    "serve": 1634.3,
+    "ret": 1290.1,
+    "elo": 1513.4,
+    "n_grass": 15,
+    "last_date": "2026-04-14",
+    "seed": null
+  },
+  {
+    "player": "Muller A.",
+    "rank": 127,
+    "serve": 1681.7,
+    "ret": 1309.4,
+    "elo": 1641.4,
+    "n_grass": 7,
+    "last_date": "2026-05-26",
+    "seed": null
+  },
+  {
+    "player": "Gaubas V.",
+    "rank": 133,
+    "serve": 1628.7,
+    "ret": 1398.3,
+    "elo": 1645.5,
+    "n_grass": 0,
+    "last_date": "2026-05-25",
+    "seed": null
+  },
+  {
+    "player": "Safiullin R.",
+    "rank": 135,
+    "serve": 1754.7,
+    "ret": 1318.7,
+    "elo": 1585.9,
+    "n_grass": 18,
+    "last_date": "2026-06-09",
+    "seed": null
+  },
+  {
+    "player": "Gea A.",
+    "rank": 135,
+    "serve": 1597.1,
+    "ret": 1417.9,
+    "elo": 1576.9,
+    "n_grass": 0,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Dimitrov G.",
+    "rank": 137,
+    "serve": 1842.7,
+    "ret": 1367.0,
+    "elo": 1789.3,
+    "n_grass": 82,
+    "last_date": "2026-04-23",
+    "seed": null
+  },
+  {
+    "player": "Lajovic D.",
+    "rank": 138,
+    "serve": 1673.6,
+    "ret": 1286.7,
+    "elo": 1526.5,
+    "n_grass": 25,
+    "last_date": "2026-04-24",
+    "seed": null
+  },
+  {
+    "player": "Budkov Kjaer N.",
+    "rank": 140,
+    "serve": 1556.8,
+    "ret": 1450.3,
+    "elo": 1621.7,
+    "n_grass": 0,
+    "last_date": "2026-04-27",
+    "seed": null
+  },
+  {
+    "player": "Dellien H.",
+    "rank": 144,
+    "serve": 1612.7,
+    "ret": 1291.5,
+    "elo": 1476.1,
+    "n_grass": 4,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Zheng M.",
+    "rank": 146,
+    "serve": 1563.4,
+    "ret": 1433.1,
+    "elo": 1514.4,
+    "n_grass": 0,
+    "last_date": "2026-05-24",
+    "seed": null
+  }
+]

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wimbledon 2026 — Forecast · Gennaro Pancia</title>
+<meta name="description" content="Modello di previsione del vincitore di Wimbledon 2026. Motore Barnett-Clarke su Elo Serve/Return per erba, Monte Carlo del tabellone, backtest verificato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="#top">Gennaro Pancia<span class="cursor">.</span></a>
+    <div class="topbar-right">
+      <span class="live"><span class="dot"></span><span data-i18n="live">live</span></span>
+      <div class="lang" role="group" aria-label="language">
+        <button data-lang="it" class="lang-btn active">IT</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <section class="hero">
+    <p class="mono-label" data-i18n="kicker">The Championships · Wimbledon · 29 giu – 12 lug 2026</p>
+    <h1 class="display">Wimbledon 2026<br><span class="thin" data-i18n="subtitle">Modello di previsione del vincitore</span></h1>
+    <p class="lede" id="intro"></p>
+    <div class="meta-row">
+      <div class="instrument">
+        <span class="mono-label" data-i18n="m_through">dati aggiornati al</span>
+        <span class="num" id="m-through">—</span>
+      </div>
+      <div class="instrument">
+        <span class="mono-label" data-i18n="m_sims">simulazioni</span>
+        <span class="num" id="m-sims">—</span>
+      </div>
+      <div class="instrument">
+        <span class="mono-label" data-i18n="m_brier">brier (backtest)</span>
+        <span class="num brass" id="m-brier">—</span>
+      </div>
+      <div class="instrument">
+        <span class="mono-label" data-i18n="m_acc">accuratezza</span>
+        <span class="num" id="m-acc">—</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-draw="men" role="tab"><span data-i18n="men">Maschile</span> · ATP</button>
+    <button class="tab" data-draw="women" role="tab"><span data-i18n="women">Femminile</span> · WTA</button>
+  </nav>
+
+  <p class="wta-warn" id="wta-warn" hidden data-i18n="wta_warn"></p>
+
+  <section class="board">
+    <div class="board-head">
+      <h2 class="mono-label" data-i18n="board_title">probabilità di titolo</h2>
+      <input type="search" id="search" class="search" data-i18n-ph="search_ph" placeholder="cerca giocatore…">
+    </div>
+    <div class="table-scroll">
+      <table class="grid" id="forecast-table">
+        <thead>
+          <tr>
+            <th class="c-rank" data-sort="seed" data-i18n="th_seed">testa</th>
+            <th class="c-name" data-sort="player" data-i18n="th_player">giocatore</th>
+            <th class="c-prob sortable active" data-sort="p_title" data-i18n="th_title">titolo</th>
+            <th class="c-prob sortable" data-sort="p_final" data-i18n="th_final">finale</th>
+            <th class="c-prob sortable" data-sort="p_sf" data-i18n="th_sf">semi</th>
+            <th class="c-prob sortable" data-sort="p_qf" data-i18n="th_qf">quarti</th>
+          </tr>
+        </thead>
+        <tbody id="forecast-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="h2h">
+    <h2 class="mono-label" data-i18n="h2h_title">esploratore testa a testa</h2>
+    <div id="gate" class="gate">
+      <p class="gate-copy" data-i18n="gate_copy">Inserisci nome ed email per sbloccare il simulatore di singola partita.</p>
+      <form id="gate-form" name="wimbledon-access" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="wimbledon-access">
+        <p class="hidden"><label>Non compilare <input name="bot-field"></label></p>
+        <div class="gate-fields">
+          <input type="text" name="name" required data-i18n-ph="gate_name" placeholder="Nome">
+          <input type="email" name="email" required data-i18n-ph="gate_email" placeholder="Email">
+          <button type="submit" data-i18n="gate_btn">Sblocca</button>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" required>
+          <span data-i18n="gate_consent">Acconsento a ricevere aggiornamenti sul modello. Niente spam.</span></label>
+      </form>
+    </div>
+    <div id="h2h-tool" class="h2h-tool" hidden>
+      <div class="h2h-selects">
+        <select id="pa"></select>
+        <span class="vs mono-label">vs</span>
+        <select id="pb"></select>
+      </div>
+      <div class="h2h-result" id="h2h-result"></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 class="mono-label" data-i18n="bt_title">backtest · wimbledon 2021–2025</h2>
+    <p class="panel-copy" id="bt-note"></p>
+    <div class="bt-grid" id="bt-grid"></div>
+    <div class="calib">
+      <h3 class="mono-label" data-i18n="calib_title">calibrazione (previsto vs osservato)</h3>
+      <div class="calib-chart" id="calib-chart"></div>
+    </div>
+    <div class="tourney" id="tourney"></div>
+  </section>
+
+  <section class="panel two-col">
+    <div>
+      <h2 class="mono-label" data-i18n="method_title">metodologia</h2>
+      <ol class="steps" id="method-list"></ol>
+    </div>
+    <div>
+      <h2 class="mono-label" data-i18n="limits_title">limiti dichiarati</h2>
+      <ul class="limits" id="limits-list"></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p class="wordmark small">Gennaro Pancia<span class="cursor">.</span></p>
+  <p class="tagline" id="tagline">The numbers don't lie. You just can't read them.</p>
+  <p class="disclaimer" id="disclaimer"></p>
+  <p class="src mono-label">fonte dati: tennis-data.co.uk · metodo: Barnett-Clarke · Elo · Monte Carlo</p>
+</footer>
+
+<script src="assets/engine.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

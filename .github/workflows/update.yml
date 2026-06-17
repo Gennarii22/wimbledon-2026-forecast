@@ -1,0 +1,44 @@
+name: Update Wimbledon forecast
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # ogni giorno 06:00 UTC durante il torneo
+  workflow_dispatch: {}    # avvio manuale
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Rebuild data + forecast
+        working-directory: pipeline
+        run: |
+          python3 01_build_db.py
+          python3 02_ratings.py
+          python3 03_backtest.py
+          python3 04_field.py
+          python3 05_montecarlo.py
+          python3 06_export.py
+
+      - name: Commit refreshed forecast
+        run: |
+          git config user.name  "wimbledon-bot"
+          git config user.email "actions@github.com"
+          git add site/data data/tennis.db
+          if git diff --cached --quiet; then
+            echo "Nessun cambiamento."
+          else
+            git commit -m "auto: refresh forecast $(date -u +%Y-%m-%d)"
+            git push
+          fi

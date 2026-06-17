@@ -1,0 +1,11 @@
+# derivati rigenerabili dalla pipeline (non versionati)
+data/engineered.parquet
+data/ratings_state.pkl
+data/atp_*.xlsx
+data/wta_*.xlsx
+data/calibration.json
+data/backtest.json
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
