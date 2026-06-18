@@ -34,7 +34,11 @@ def seed_slot_order(num):
 def precompute_matrix(field, state, bo, beta, calib):
     """P[i][j] = P(i batte j): rank-prior (blended_raw) + calibrazione/forma (final_prob)."""
     nP=len(field)
-    R=[E.get_ratings(state,f['player'],'Grass') for f in field]
+    R=[dict(E.get_ratings(state,f['player'],'Grass')) for f in field]
+    # overlay veterani (prior dichiarato, solo live): penalita' Elo su serve/return per anzianita'
+    for i,f in enumerate(field):
+        pen=E.age_penalty(f.get('active',0.0))
+        R[i]['serve']-=pen; R[i]['ret']-=pen; R[i]['_pen']=pen
     P=np.zeros((nP,nP))
     for i in range(nP):
         fi=field[i]
@@ -94,7 +98,7 @@ def run(field, state, bo, beta, calib, circuit):
         res.append(dict(player=f['player'], seed=f['seed'], rank=f['rank'],
                         serve=f['serve'], ret=f['ret'], elo=f['elo'], n_grass=f['n_grass'],
                         n_match=int(state['n_match'].get(f['player'],0)),
-                        form10=f['form10'], grass=f['grass'], ped=f['ped'],
+                        form10=f['form10'], grass=f['grass'], ped=f['ped'], active=f.get('active',0.0),
                         p_title=round(counts[i][0]/N_SIMS,4),
                         p_final=round(counts[i][1]/N_SIMS,4),
                         p_sf=round(counts[i][2]/N_SIMS,4),
@@ -117,6 +121,7 @@ def main():
     state=pickle.load(open(os.path.join(DATA,"ratings_state.pkl"),"rb"))
     caljson=json.load(open(os.path.join(DATA,"calibration.json")))
     beta=caljson['beta']; E.RANK_BETA=beta
+    E.AGE_ON=True   # overlay veterani attivo solo qui (forecast live), non nel backtest
     calib=(caljson['platt_a'],caljson['platt_b'],caljson['c_form'],caljson['c_grass'],caljson['c_ped'])
     for circuit,ff,of in [('ATP','field_men.json','forecast_men.json'),
                           ('WTA','field_women.json','forecast_women.json')]:

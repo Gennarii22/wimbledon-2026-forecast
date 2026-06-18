@@ -41,7 +41,11 @@ const WE = (function () {
     return 1 / (1 + Math.exp(-z));
   }
   /* a, b = oggetti giocatore {serve,ret,elo,n_match,rank,form10,grass,ped}; bo = 5|3 */
+  const agePen = (act) => Math.min(Math.max(0, (act || 0) - 14) * 6, 80);
   function prob(a, b, bo) {
+    const pa = agePen(a.active), pb = agePen(b.active);
+    a = { ...a, serve: a.serve - pa, ret: a.ret - pa };
+    b = { ...b, serve: b.serve - pb, ret: b.ret - pb };
     const holdA = expScore(a.serve, b.ret), holdB = expScore(b.serve, a.ret);
     const pBc = matchFromSet(setProb(holdA, holdB), bo);
     const pRk = rankProb(a.rank, b.rank);

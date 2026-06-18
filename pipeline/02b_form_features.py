@@ -31,6 +31,7 @@ def main():
     grass={}       # player -> [won bool] su erba
     ty_wins={}     # (player,tournament,year) -> wins
     last_seen={}   # player -> ultima data (per snapshot attivi)
+    first_seen={}  # player -> prima data vista (proxy eta'/anzianita' di carriera)
 
     def f10(p):
         r=recent.get(p,[]); return float(np.mean(r[-10:])) if len(r)>=3 else 0.5
@@ -39,13 +40,20 @@ def main():
     def ped(p,tour,yr):
         return float(ty_wins.get((p,tour,yr-1),0))
 
+    def active(p, d):
+        fs=first_seen.get(p)
+        return round((d-fs).days/365.25,2) if fs else 0.0
+
     rows=[]
     for _,r in m.iterrows():
-        w,l,tour,yr,surf=r['winner'],r['loser'],r['tournament'],int(r['year']),r['surface']
+        w,l,tour,yr,surf,d=r['winner'],r['loser'],r['tournament'],int(r['year']),r['surface'],r['d']
+        if w not in first_seen: first_seen[w]=d
+        if l not in first_seen: first_seen[l]=d
         rows.append(dict(match_id=r['match_id'],
             w_form10=f10(w), l_form10=f10(l),
             w_grass=fg(w),   l_grass=fg(l),
-            w_ped=ped(w,tour,yr), l_ped=ped(l,tour,yr)))
+            w_ped=ped(w,tour,yr), l_ped=ped(l,tour,yr),
+            w_active=active(w,d), l_active=active(l,d)))
         # update (post-match)
         recent.setdefault(w,[]).append(True);  recent.setdefault(l,[]).append(False)
         if surf=='Grass':
@@ -65,8 +73,11 @@ def main():
     snap={}
     wkey=[k for k in ty_wins if 'Wimbledon' in k[1] and k[2]==2025]
     wimb25={k[0]:v for k,v in ty_wins.items() if 'Wimbledon' in k[1] and k[2]==2025}
+    wimb_start_2026=datetime(2026,6,29)
     for p in recent:
-        snap[p]=dict(form10=f10(p), grass=fg(p), ped=float(wimb25.get(p,0)), last=last_seen.get(p))
+        snap[p]=dict(form10=f10(p), grass=fg(p), ped=float(wimb25.get(p,0)),
+                     active=round((wimb_start_2026-first_seen[p]).days/365.25,2) if p in first_seen else 0.0,
+                     last=last_seen.get(p))
     json.dump(snap, open(os.path.join(DATA,"form_state.json"),"w"))
     print(f"form_state.json: {len(snap)} giocatori. Esempio pedigree Wimbledon 2025>0:",
           sorted([(p,v['ped']) for p,v in snap.items() if v['ped']>0], key=lambda x:-x[1])[:6])

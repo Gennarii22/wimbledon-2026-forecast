@@ -17,13 +17,21 @@ Niente vantaggio-campo: il dataset non contiene la nazionalita' (limite dichiara
 """
 import numpy as np
 
-C_SHRINK = 25.0       # match-erba per peso 0.5 sullo specifico-superficie
-C_REL    = 150.0      # match totali per affidabilita' 0.5 (ancoraggio al ranking)
+C_SHRINK = 50.0       # match-erba per peso 0.5 sullo specifico-superficie (ottimizzato OOS)
+C_REL    = 100.0      # match totali per affidabilita' 0.5 (ancoraggio al ranking, ottimizzato OOS)
 DEFAULT_ALPHA = 1.0   # (mantenuto per compatibilita'; il blend ora e' rank-based)
 RANK_BETA = 0.40      # pendenza logistica sul log2-rank (fit nel backtest)
 
 def exp_score(ra, rb):
     return 1.0 / (1.0 + 10.0 ** ((rb - ra) / 400.0))
+
+# Overlay veterani: SOLO per il forecast live, NON nel modello validato dal backtest.
+# Il backtest (2021-2024) non puo' validarlo perche' in quegli anni i veterani vincevano
+# ancora (Djokovic). E' un prior dichiarato: penalita' Elo per anni-di-carriera oltre i 14
+# (~eta' 32+), per correggere il rating gonfiato dal prime (es. Djokovic 39 anni).
+AGE_ON = False        # attivato esplicitamente nel forecast live
+def age_penalty(years_active):
+    return min(max(0.0, (years_active - 14.0)) * 6.0, 80.0) if AGE_ON else 0.0
 
 def _shrink(general, surface, n):
     w = n / (n + C_SHRINK)

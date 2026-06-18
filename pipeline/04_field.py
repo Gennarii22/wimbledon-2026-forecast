@@ -41,7 +41,7 @@ def build(circuit, state, n=128, n_seeds=32):
                           serve=round(r['serve'],1), ret=round(r['ret'],1),
                           elo=round(r['elo'],1), n_grass=int(r['n']),
                           form10=round(fm.get('form10',0.5),3), grass=round(fm.get('grass',0.5),3),
-                          ped=float(fm.get('ped',0.0)),
+                          ped=float(fm.get('ped',0.0)), active=round(fm.get('active',0.0),1),
                           last_date=state['last_date'].get(p)))
         if len(field)>=n: break
     for i,f in enumerate(field):

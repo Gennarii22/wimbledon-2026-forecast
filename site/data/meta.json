@@ -1,20 +1,19 @@
 {
-  "generated_utc": "2026-06-18 13:06 UTC",
+  "generated_utc": "2026-06-18 13:44 UTC",
   "data_through": "2026-06-14",
   "n_matches_atp": 70696,
   "n_matches_wta": 46716,
   "params": {
     "alpha": 1.0,
     "beta": 0.41873153434007193,
-    "platt_a": 0.9481272384962409,
-    "platt_b": 0.021368525618894366,
+    "platt_a": 1.0259058462371573,
+    "platt_b": 0.0197806022091052,
     "c_form": 0.0,
-    "c_grass": 1.3267519089501956,
-    "c_ped": 0.03320486218840226,
-    "c_shrink": 25.0,
-    "c_rel": 150.0,
+    "c_grass": 0.0,
+    "c_ped": 0.0632169564318257,
+    "c_shrink": 50.0,
+    "c_rel": 100.0,
     "features_kept": [
-      2,
       3
     ]
   },
@@ -35,27 +34,27 @@
   "backtest_summary": {
     "all": {
       "n": 1270,
-      "brier": 0.1976,
-      "logloss": 0.5784,
-      "accuracy": 0.6874
+      "brier": 0.1982,
+      "logloss": 0.5809,
+      "accuracy": 0.6961
     },
     "atp": {
       "n": 635,
       "brier": 0.1877,
-      "logloss": 0.5532,
-      "accuracy": 0.7055
+      "logloss": 0.5542,
+      "accuracy": 0.7087
     },
     "wta": {
       "n": 635,
-      "brier": 0.2076,
-      "logloss": 0.6036,
-      "accuracy": 0.6693
+      "brier": 0.2087,
+      "logloss": 0.6076,
+      "accuracy": 0.6835
     },
     "oos2025": {
       "n": 254,
-      "brier": 0.2094,
-      "logloss": 0.6071,
-      "accuracy": 0.6654
+      "brier": 0.2067,
+      "logloss": 0.6042,
+      "accuracy": 0.689
     }
   },
   "text": {
@@ -68,7 +67,8 @@
         "Shrinkage verso il rating generale quando i match su erba sono pochi (la stagione e' cortissima).",
         "Motore Barnett-Clarke: dalla probabilita' di tenere il servizio -> set -> match (5 set uomini, 3 set donne), calcolo esatto.",
         "Prior da ranking (Koning 2010) per i giocatori con pochi match, per non fidarsi di un Elo gonfiato da pochi risultati.",
-        "Aggiustamento per la forma recente sull'erba (warm-up): tenuto solo perche' migliora il backtest out-of-sample, utile soprattutto nel tabellone femminile.",
+        "Iperparametri di shrinkage/affidabilita' ottimizzati out-of-sample (C_SHRINK=50, C_REL=100).",
+        "Overlay veterani solo sul forecast live: penalita' Elo per eta'/anzianita' di carriera (>14 anni nel circuito), per correggere il rating gonfiato dal prime di chi e' a fine carriera. E' un prior dichiarato, non validato dal backtest (nell'era di test i veterani vincevano ancora).",
         "Calibrazione di Platt stimata out-of-sample sulle edizioni di Wimbledon 2021-2024.",
         "Monte Carlo del tabellone a 128: il sorteggio ufficiale non e' ancora uscito, quindi simuliamo migliaia di sorteggi con le teste di serie nei loro slot canonici."
       ],
@@ -79,7 +79,7 @@
         "L'Elo Serve/Return e' stimato dai punteggi dei set (hold/break), non dai dati punto-per-punto.",
         "Il tabellone femminile e' strutturalmente piu' imprevedibile: il backtest mostra che a Wimbledon vincono spesso outsider non testa di serie. Le probabilita' WTA vanno lette con piu' incertezza."
       ],
-      "backtest_note": "Backtest leak-free su Wimbledon 2021-2025 (1.270 match). Brier 0.1976 complessivo (ATP 0.1877, WTA 0.2076), accuratezza 68%. Out-of-sample 2025: Brier 0.2094. A livello torneo il favorito del modello ha vinto il titolo ATP nel 2021, 2022 e 2025.",
+      "backtest_note": "Backtest leak-free su Wimbledon 2021-2025 (1.270 match). Brier 0.1982 complessivo (ATP 0.1877, WTA 0.2087), accuratezza 69%. Out-of-sample 2025: Brier 0.2067. A livello torneo il favorito del modello ha vinto il titolo ATP nel 2021, 2022 e 2025.",
       "disclaimer": "Strumento analitico a scopo informativo. Nessuna garanzia di risultato. Gioca responsabilmente."
     },
     "en": {
@@ -91,7 +91,8 @@
         "Shrinkage toward the general rating when a player has few grass matches (the season is very short).",
         "Barnett-Clarke engine: from hold probability -> set -> match (best-of-5 men, best-of-3 women), exact computation.",
         "Ranking prior (Koning 2010) for low-match players, to avoid trusting an Elo inflated by a small sample.",
-        "Recent grass form (warm-up) adjustment, kept only because it improves the out-of-sample backtest, most useful on the women's draw.",
+        "Shrinkage/reliability hyperparameters tuned out-of-sample (C_SHRINK=50, C_REL=100).",
+        "Veteran overlay on the live forecast only: an Elo penalty for age/career length (>14 years on tour), to correct prime-inflated ratings of late-career players. A stated prior, not backtest-validated (in the test era the veterans were still winning).",
         "Platt calibration estimated out-of-sample on Wimbledon 2021-2024.",
         "128-draw Monte Carlo: the official draw is not out yet, so we simulate thousands of draws with seeds in their canonical slots."
       ],
@@ -102,7 +103,7 @@
         "Serve/Return Elo is estimated from set scores (holds/breaks), not point-by-point data.",
         "The women's draw is structurally less predictable: the backtest shows unseeded outsiders often win Wimbledon. Read WTA probabilities with more uncertainty."
       ],
-      "backtest_note": "Leak-free backtest on Wimbledon 2021-2025 (1,270 matches). Brier 0.1976 overall (ATP 0.1877, WTA 0.2076), accuracy 68%. Out-of-sample 2025: Brier 0.2094. At tournament level the model favorite won the ATP title in 2021, 2022 and 2025.",
+      "backtest_note": "Leak-free backtest on Wimbledon 2021-2025 (1,270 matches). Brier 0.1982 overall (ATP 0.1877, WTA 0.2087), accuracy 69%. Out-of-sample 2025: Brier 0.2067. At tournament level the model favorite won the ATP title in 2021, 2022 and 2025.",
       "disclaimer": "Analytical tool for informational purposes. No guarantee of outcome. Gamble responsibly."
     }
   }
