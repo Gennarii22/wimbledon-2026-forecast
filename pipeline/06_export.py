@@ -26,10 +26,13 @@ def main():
     wta_m = bt['match_level']['by_circuit_WTA']['calibrated']
     oos = bt['match_level']['oos_2025']['calibrated']
 
+    wd=json.load(open(os.path.join(DATA,"withdrawals.json"))) if os.path.exists(os.path.join(DATA,"withdrawals.json")) else {}
+    withdrawals={c:wd.get(c,[]) for c in ('ATP','WTA')}
+
     meta=dict(
         generated_utc=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         data_through=last_date, n_matches_atp=n_atp, n_matches_wta=n_wta,
-        params=cal,
+        params=cal, withdrawals=withdrawals,
         backtest_summary=dict(all=bl, atp=atp_m, wta=wta_m, oos2025=oos),
         text=dict(
             it=dict(

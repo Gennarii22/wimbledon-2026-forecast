@@ -16,13 +16,17 @@ HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
 DATA=os.path.join(ROOT,"data")
 
 FORM=json.load(open(os.path.join(DATA,"form_state.json"))) if os.path.exists(os.path.join(DATA,"form_state.json")) else {}
+_wd=json.load(open(os.path.join(DATA,"withdrawals.json"))) if os.path.exists(os.path.join(DATA,"withdrawals.json")) else {}
+WITHDRAWN={c:set(_wd.get(c,[])) for c in ('ATP','WTA')}
 
 def build(circuit, state, n=128, n_seeds=32):
     cand=[]
     seen=set()
+    out=WITHDRAWN.get(circuit,set())
     pool=[(p, state['last_rank'].get(p)) for p in state['circ']
           if state['circ'][p]==circuit and state['last_date'].get(p,'')>='2026-04-01'
-          and state['last_rank'].get(p) and state['last_rank'].get(p)>0]
+          and state['last_rank'].get(p) and state['last_rank'].get(p)>0
+          and p not in out]
     # ordina per rank, tie-break per rating-erba (serve+return shrinkati)
     def grass_strength(p):
         r=E.get_ratings(state,p,'Grass'); return -(r['serve']+r['ret'])

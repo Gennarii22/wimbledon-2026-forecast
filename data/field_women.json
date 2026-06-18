@@ -104,19 +104,6 @@
     "seed": 8
   },
   {
-    "player": "Mboko V.",
-    "rank": 9,
-    "serve": 1812.8,
-    "ret": 1502.6,
-    "elo": 1939.4,
-    "n_grass": 3,
-    "form10": 0.5,
-    "grass": 0.333,
-    "ped": 1.0,
-    "last_date": "2026-06-10",
-    "seed": 9
-  },
-  {
     "player": "Muchova K.",
     "rank": 10,
     "serve": 1776.4,
@@ -127,7 +114,7 @@
     "grass": 0.3,
     "ped": 0.0,
     "last_date": "2026-05-29",
-    "seed": 10
+    "seed": 9
   },
   {
     "player": "Bencic B.",
@@ -140,7 +127,7 @@
     "grass": 0.7,
     "ped": 5.0,
     "last_date": "2026-05-31",
-    "seed": 11
+    "seed": 10
   },
   {
     "player": "Noskova L.",
@@ -153,7 +140,7 @@
     "grass": 0.7,
     "ped": 3.0,
     "last_date": "2026-05-26",
-    "seed": 12
+    "seed": 11
   },
   {
     "player": "Paolini J.",
@@ -166,7 +153,7 @@
     "grass": 0.6,
     "ped": 1.0,
     "last_date": "2026-05-27",
-    "seed": 13
+    "seed": 12
   },
   {
     "player": "Kostyuk M.",
@@ -179,7 +166,7 @@
     "grass": 0.3,
     "ped": 0.0,
     "last_date": "2026-06-04",
-    "seed": 14
+    "seed": 13
   },
   {
     "player": "Osaka N.",
@@ -192,7 +179,7 @@
     "grass": 0.4,
     "ped": 2.0,
     "last_date": "2026-06-01",
-    "seed": 15
+    "seed": 14
   },
   {
     "player": "Alexandrova E.",
@@ -205,7 +192,7 @@
     "grass": 0.6,
     "ped": 3.0,
     "last_date": "2026-06-08",
-    "seed": 16
+    "seed": 15
   },
   {
     "player": "Cirstea S.",
@@ -218,7 +205,7 @@
     "grass": 0.3,
     "ped": 0.0,
     "last_date": "2026-06-12",
-    "seed": 17
+    "seed": 16
   },
   {
     "player": "Jovic I.",
@@ -231,7 +218,7 @@
     "grass": 0.6,
     "ped": 0.0,
     "last_date": "2026-06-13",
-    "seed": 18
+    "seed": 17
   },
   {
     "player": "Keys M.",
@@ -244,7 +231,7 @@
     "grass": 0.6,
     "ped": 2.0,
     "last_date": "2026-06-01",
-    "seed": 19
+    "seed": 18
   },
   {
     "player": "Mertens E.",
@@ -257,7 +244,7 @@
     "grass": 0.7,
     "ped": 3.0,
     "last_date": "2026-06-11",
-    "seed": 20
+    "seed": 19
   },
   {
     "player": "Shnaider D.",
@@ -270,7 +257,7 @@
     "grass": 0.5,
     "ped": 1.0,
     "last_date": "2026-06-04",
-    "seed": 21
+    "seed": 20
   },
   {
     "player": "Fernandez L.A.",
@@ -283,7 +270,7 @@
     "grass": 0.4,
     "ped": 1.0,
     "last_date": "2026-06-09",
-    "seed": 22
+    "seed": 21
   },
   {
     "player": "Kalinskaya A.",
@@ -296,7 +283,7 @@
     "grass": 0.7,
     "ped": 1.0,
     "last_date": "2026-06-03",
-    "seed": 23
+    "seed": 22
   },
   {
     "player": "Tauson C.",
@@ -309,7 +296,7 @@
     "grass": 0.6,
     "ped": 3.0,
     "last_date": "2026-06-08",
-    "seed": 24
+    "seed": 23
   },
   {
     "player": "Navarro E.",
@@ -322,20 +309,7 @@
     "grass": 0.6,
     "ped": 3.0,
     "last_date": "2026-06-10",
-    "seed": 25
-  },
-  {
-    "player": "Baptiste H.",
-    "rank": 26,
-    "serve": 1806.2,
-    "ret": 1380.5,
-    "elo": 1801.4,
-    "n_grass": 4,
-    "form10": 0.6,
-    "grass": 0.5,
-    "ped": 2.0,
-    "last_date": "2026-05-27",
-    "seed": 26
+    "seed": 24
   },
   {
     "player": "Potapova A.",
@@ -348,7 +322,7 @@
     "grass": 0.4,
     "ped": 0.0,
     "last_date": "2026-06-11",
-    "seed": 27
+    "seed": 25
   },
   {
     "player": "Bouzkova M.",
@@ -361,7 +335,7 @@
     "grass": 0.4,
     "ped": 1.0,
     "last_date": "2026-06-12",
-    "seed": 28
+    "seed": 26
   },
   {
     "player": "Li A.",
@@ -374,7 +348,7 @@
     "grass": 0.4,
     "ped": 1.0,
     "last_date": "2026-05-28",
-    "seed": 29
+    "seed": 27
   },
   {
     "player": "Ostapenko J.",
@@ -387,7 +361,7 @@
     "grass": 0.6,
     "ped": 0.0,
     "last_date": "2026-05-27",
-    "seed": 30
+    "seed": 28
   },
   {
     "player": "Eala A.",
@@ -400,7 +374,7 @@
     "grass": 0.556,
     "ped": 0.0,
     "last_date": "2026-06-10",
-    "seed": 31
+    "seed": 29
   },
   {
     "player": "Bucsa C.",
@@ -413,7 +387,7 @@
     "grass": 0.4,
     "ped": 2.0,
     "last_date": "2026-05-25",
-    "seed": 32
+    "seed": 30
   },
   {
     "player": "Wang Xin.",
@@ -426,7 +400,7 @@
     "grass": 0.6,
     "ped": 1.0,
     "last_date": "2026-05-27",
-    "seed": null
+    "seed": 31
   },
   {
     "player": "Samsonova L.",
@@ -439,7 +413,7 @@
     "grass": 0.7,
     "ped": 4.0,
     "last_date": "2026-06-08",
-    "seed": null
+    "seed": 32
   },
   {
     "player": "Siniakova K.",
@@ -1661,6 +1635,32 @@
     "grass": 0.5,
     "ped": 0.0,
     "last_date": "2026-04-13",
+    "seed": null
+  },
+  {
+    "player": "Stefanini L.",
+    "rank": 154,
+    "serve": 1622.6,
+    "ret": 1323.3,
+    "elo": 1519.1,
+    "n_grass": 4,
+    "form10": 0.2,
+    "grass": 0.25,
+    "ped": 0.0,
+    "last_date": "2026-05-06",
+    "seed": null
+  },
+  {
+    "player": "Boisson L.",
+    "rank": 155,
+    "serve": 1692.6,
+    "ret": 1422.1,
+    "elo": 1700.9,
+    "n_grass": 1,
+    "form10": 0.3,
+    "grass": 0.5,
+    "ped": 0.0,
+    "last_date": "2026-06-10",
     "seed": null
   }
 ]

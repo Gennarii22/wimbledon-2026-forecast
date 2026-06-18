@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-17 23:22 UTC",
+  "generated_utc": "2026-06-18 13:06 UTC",
   "data_through": "2026-06-14",
   "n_matches_atp": 70696,
   "n_matches_wta": 46716,
@@ -16,6 +16,20 @@
     "features_kept": [
       2,
       3
+    ]
+  },
+  "withdrawals": {
+    "ATP": [
+      "Alcaraz C.",
+      "Musetti L.",
+      "Vacherot V.",
+      "Cazaux A."
+    ],
+    "WTA": [
+      "Mboko V.",
+      "Baptiste H.",
+      "Gracheva V.",
+      "Kartal S."
     ]
   },
   "backtest_summary": {

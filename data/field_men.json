@@ -13,19 +13,6 @@
     "seed": 1
   },
   {
-    "player": "Alcaraz C.",
-    "rank": 2,
-    "serve": 1929.0,
-    "ret": 1512.4,
-    "elo": 2191.6,
-    "n_grass": 39,
-    "form10": 0.6,
-    "grass": 0.9,
-    "ped": 6.0,
-    "last_date": "2026-04-16",
-    "seed": 2
-  },
-  {
     "player": "Zverev A.",
     "rank": 3,
     "serve": 1857.7,
@@ -36,7 +23,7 @@
     "grass": 0.6,
     "ped": 0.0,
     "last_date": "2026-06-07",
-    "seed": 3
+    "seed": 2
   },
   {
     "player": "Djokovic N.",
@@ -49,7 +36,7 @@
     "grass": 0.8,
     "ped": 5.0,
     "last_date": "2026-05-29",
-    "seed": 4
+    "seed": 3
   },
   {
     "player": "Auger-Aliassime F.",
@@ -62,7 +49,7 @@
     "grass": 0.5,
     "ped": 1.0,
     "last_date": "2026-06-12",
-    "seed": 5
+    "seed": 4
   },
   {
     "player": "Shelton B.",
@@ -75,7 +62,7 @@
     "grass": 0.8,
     "ped": 4.0,
     "last_date": "2026-06-14",
-    "seed": 6
+    "seed": 5
   },
   {
     "player": "De Minaur A.",
@@ -88,7 +75,7 @@
     "grass": 0.6,
     "ped": 3.0,
     "last_date": "2026-06-14",
-    "seed": 7
+    "seed": 6
   },
   {
     "player": "Medvedev D.",
@@ -101,7 +88,7 @@
     "grass": 0.6,
     "ped": 0.0,
     "last_date": "2026-06-13",
-    "seed": 8
+    "seed": 7
   },
   {
     "player": "Fritz T.",
@@ -114,20 +101,7 @@
     "grass": 0.8,
     "ped": 5.0,
     "last_date": "2026-06-14",
-    "seed": 9
-  },
-  {
-    "player": "Musetti L.",
-    "rank": 10,
-    "serve": 1800.7,
-    "ret": 1399.9,
-    "elo": 1885.5,
-    "n_grass": 29,
-    "form10": 0.6,
-    "grass": 0.7,
-    "ped": 0.0,
-    "last_date": "2026-05-12",
-    "seed": 10
+    "seed": 8
   },
   {
     "player": "Bublik A.",
@@ -140,7 +114,7 @@
     "grass": 0.7,
     "ped": 0.0,
     "last_date": "2026-06-13",
-    "seed": 11
+    "seed": 9
   },
   {
     "player": "Lehecka J.",
@@ -153,7 +127,7 @@
     "grass": 0.7,
     "ped": 1.0,
     "last_date": "2026-06-13",
-    "seed": 12
+    "seed": 10
   },
   {
     "player": "Rublev A.",
@@ -166,7 +140,7 @@
     "grass": 0.5,
     "ped": 3.0,
     "last_date": "2026-05-31",
-    "seed": 13
+    "seed": 11
   },
   {
     "player": "Cobolli F.",
@@ -179,7 +153,7 @@
     "grass": 0.6,
     "ped": 4.0,
     "last_date": "2026-06-07",
-    "seed": 14
+    "seed": 12
   },
   {
     "player": "Khachanov K.",
@@ -192,7 +166,7 @@
     "grass": 0.7,
     "ped": 4.0,
     "last_date": "2026-05-29",
-    "seed": 15
+    "seed": 13
   },
   {
     "player": "Ruud C.",
@@ -205,7 +179,7 @@
     "grass": 0.4,
     "ped": 0.0,
     "last_date": "2026-05-31",
-    "seed": 16
+    "seed": 14
   },
   {
     "player": "Fils A.",
@@ -218,7 +192,7 @@
     "grass": 0.6,
     "ped": 0.0,
     "last_date": "2026-05-09",
-    "seed": 17
+    "seed": 15
   },
   {
     "player": "Darderi L.",
@@ -231,7 +205,7 @@
     "grass": 0.4,
     "ped": 2.0,
     "last_date": "2026-05-28",
-    "seed": 18
+    "seed": 16
   },
   {
     "player": "Tien L.",
@@ -244,20 +218,7 @@
     "grass": 0.571,
     "ped": 1.0,
     "last_date": "2026-05-30",
-    "seed": 19
-  },
-  {
-    "player": "Vacherot V.",
-    "rank": 19,
-    "serve": 1777.5,
-    "ret": 1417.7,
-    "elo": 1911.5,
-    "n_grass": 0,
-    "form10": 0.6,
-    "grass": 0.5,
-    "ped": 0.0,
-    "last_date": "2026-05-28",
-    "seed": 20
+    "seed": 17
   },
   {
     "player": "Paul T.",
@@ -270,7 +231,7 @@
     "grass": 0.7,
     "ped": 1.0,
     "last_date": "2026-05-29",
-    "seed": 21
+    "seed": 18
   },
   {
     "player": "Davidovich Fokina A.",
@@ -283,7 +244,7 @@
     "grass": 0.5,
     "ped": 2.0,
     "last_date": "2026-06-08",
-    "seed": 22
+    "seed": 19
   },
   {
     "player": "Norrie C.",
@@ -296,7 +257,7 @@
     "grass": 0.6,
     "ped": 4.0,
     "last_date": "2026-05-26",
-    "seed": 23
+    "seed": 20
   },
   {
     "player": "Rinderknech A.",
@@ -309,7 +270,7 @@
     "grass": 0.5,
     "ped": 2.0,
     "last_date": "2026-06-11",
-    "seed": 24
+    "seed": 21
   },
   {
     "player": "Cerundolo F.",
@@ -322,7 +283,7 @@
     "grass": 0.4,
     "ped": 0.0,
     "last_date": "2026-05-30",
-    "seed": 25
+    "seed": 22
   },
   {
     "player": "Tiafoe F.",
@@ -335,7 +296,7 @@
     "grass": 0.5,
     "ped": 1.0,
     "last_date": "2026-06-12",
-    "seed": 26
+    "seed": 23
   },
   {
     "player": "Mensik J.",
@@ -348,7 +309,7 @@
     "grass": 0.4,
     "ped": 2.0,
     "last_date": "2026-06-05",
-    "seed": 27
+    "seed": 24
   },
   {
     "player": "Draper J.",
@@ -361,7 +322,7 @@
     "grass": 0.6,
     "ped": 1.0,
     "last_date": "2026-04-13",
-    "seed": 28
+    "seed": 25
   },
   {
     "player": "Etcheverry T.",
@@ -374,7 +335,7 @@
     "grass": 0.3,
     "ped": 0.0,
     "last_date": "2026-05-24",
-    "seed": 29
+    "seed": 26
   },
   {
     "player": "Jodar R.",
@@ -387,7 +348,7 @@
     "grass": 0.5,
     "ped": 0.0,
     "last_date": "2026-06-02",
-    "seed": 30
+    "seed": 27
   },
   {
     "player": "Fonseca J.",
@@ -400,7 +361,7 @@
     "grass": 0.429,
     "ped": 2.0,
     "last_date": "2026-06-02",
-    "seed": 31
+    "seed": 28
   },
   {
     "player": "Buse I.",
@@ -413,7 +374,7 @@
     "grass": 0.5,
     "ped": 0.0,
     "last_date": "2026-05-25",
-    "seed": 32
+    "seed": 29
   },
   {
     "player": "Humbert U.",
@@ -426,7 +387,7 @@
     "grass": 0.5,
     "ped": 0.0,
     "last_date": "2026-06-11",
-    "seed": null
+    "seed": 30
   },
   {
     "player": "Nakashima B.",
@@ -439,7 +400,7 @@
     "grass": 0.6,
     "ped": 2.0,
     "last_date": "2026-05-30",
-    "seed": null
+    "seed": 31
   },
   {
     "player": "Tabilo A.",
@@ -452,7 +413,7 @@
     "grass": 0.7,
     "ped": 0.0,
     "last_date": "2026-06-01",
-    "seed": null
+    "seed": 32
   },
   {
     "player": "Moutet C.",
@@ -1661,6 +1622,45 @@
     "grass": 0.5,
     "ped": 0.0,
     "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Jacquet K.",
+    "rank": 147,
+    "serve": 1616.0,
+    "ret": 1393.5,
+    "elo": 1501.8,
+    "n_grass": 0,
+    "form10": 0.286,
+    "grass": 0.5,
+    "ped": 0.0,
+    "last_date": "2026-05-24",
+    "seed": null
+  },
+  {
+    "player": "Basavareddy N.",
+    "rank": 148,
+    "serve": 1650.2,
+    "ret": 1377.9,
+    "elo": 1640.0,
+    "n_grass": 3,
+    "form10": 0.4,
+    "grass": 0.0,
+    "ped": 0.0,
+    "last_date": "2026-05-27",
+    "seed": null
+  },
+  {
+    "player": "Diaz Acosta F.",
+    "rank": 151,
+    "serve": 1696.2,
+    "ret": 1374.6,
+    "elo": 1636.9,
+    "n_grass": 1,
+    "form10": 0.3,
+    "grass": 0.5,
+    "ped": 0.0,
+    "last_date": "2026-05-28",
     "seed": null
   }
 ]

@@ -18,6 +18,7 @@ const I18N = {
     h2h_win: "vince il match", best_of: "al meglio dei", sets: "set",
     fav: "favorito del modello", champ: "campione effettivo", rankpos: "nel modello",
     legend_pred: "previsto", legend_obs: "osservato",
+    withdrawn_label: "Esclusi dal modello — forfait/infortunio",
   },
   en: {
     live: "live", kicker: "The Championships · Wimbledon · 29 Jun – 12 Jul 2026",
@@ -37,6 +38,7 @@ const I18N = {
     h2h_win: "wins the match", best_of: "best of", sets: "sets",
     fav: "model favorite", champ: "actual champion", rankpos: "in model",
     legend_pred: "predicted", legend_obs: "observed",
+    withdrawn_label: "Excluded from the model — withdrawn/injured",
   }
 };
 
@@ -64,13 +66,14 @@ async function boot() {
   applyLang();
   renderMeta();
   renderTable();
+  renderWithdrawn();
   renderBacktest();
   setupGate();
 }
 
 function bindUI() {
-  $$(".lang-btn").forEach(b => b.onclick = () => { LANG = b.dataset.lang; $$(".lang-btn").forEach(x => x.classList.toggle("active", x === b)); applyLang(); renderMeta(); renderTable(); renderBacktest(); refreshH2H(); });
-  $$(".tab").forEach(t => t.onclick = () => { DRAW = t.dataset.draw; $$(".tab").forEach(x => x.classList.toggle("active", x === t)); $("#wta-warn").hidden = DRAW !== "women"; renderTable(); populateH2H(); refreshH2H(); });
+  $$(".lang-btn").forEach(b => b.onclick = () => { LANG = b.dataset.lang; $$(".lang-btn").forEach(x => x.classList.toggle("active", x === b)); applyLang(); renderMeta(); renderTable(); renderWithdrawn(); renderBacktest(); refreshH2H(); });
+  $$(".tab").forEach(t => t.onclick = () => { DRAW = t.dataset.draw; $$(".tab").forEach(x => x.classList.toggle("active", x === t)); $("#wta-warn").hidden = DRAW !== "women"; renderTable(); renderWithdrawn(); populateH2H(); refreshH2H(); });
   $$("th.sortable").forEach(th => th.onclick = () => {
     const k = th.dataset.sort;
     SORT.dir = (SORT.key === k) ? -SORT.dir : -1; SORT.key = k;
@@ -102,6 +105,15 @@ function renderMeta() {
   tx.method.forEach(s => { const li = document.createElement("li"); li.textContent = s; ml.appendChild(li); });
   const ll = $("#limits-list"); ll.innerHTML = "";
   tx.limits.forEach(s => { const li = document.createElement("li"); li.textContent = s; ll.appendChild(li); });
+}
+
+function renderWithdrawn() {
+  const t = I18N[LANG];
+  const wd = (META.withdrawals || {})[DRAW === "men" ? "ATP" : "WTA"] || [];
+  const el = $("#withdrawn");
+  if (!wd.length) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `<span class="wl">${t.withdrawn_label}</span><b>${wd.join("</b> · <b>")}</b>`;
 }
 
 function renderTable() {

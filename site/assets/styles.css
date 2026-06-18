@@ -63,6 +63,10 @@ body{
 .tab:hover{color:var(--parchment)}
 .wta-warn{margin-top:18px;padding:12px 16px;border-left:2px solid var(--brass);
   background:var(--surface);color:var(--sage-muted);font-size:13.5px;border-radius:0}
+.withdrawn{margin-top:12px;padding:10px 16px;border-left:2px solid var(--neg);
+  background:var(--surface);color:var(--sage-muted);font-size:13px;border-radius:0}
+.withdrawn b{color:var(--parchment);font-weight:500}
+.withdrawn .wl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--neg);display:block;margin-bottom:4px}
 
 /* board */
 .board{margin-top:28px}
