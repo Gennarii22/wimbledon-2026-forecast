@@ -25,6 +25,7 @@ jobs:
         working-directory: pipeline
         run: |
           python3 01_build_db.py
+          python3 02c_player_meta.py
           python3 02_ratings.py
           python3 03_backtest.py
           python3 04_field.py

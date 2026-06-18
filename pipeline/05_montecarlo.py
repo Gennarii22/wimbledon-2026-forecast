@@ -37,7 +37,7 @@ def precompute_matrix(field, state, bo, beta, calib):
     R=[dict(E.get_ratings(state,f['player'],'Grass')) for f in field]
     # overlay veterani (prior dichiarato, solo live): penalita' Elo su serve/return per anzianita'
     for i,f in enumerate(field):
-        pen=E.age_penalty(f.get('active',0.0))
+        pen=E.age_penalty(f.get('age',25.0))
         R[i]['serve']-=pen; R[i]['ret']-=pen; R[i]['_pen']=pen
     P=np.zeros((nP,nP))
     for i in range(nP):
@@ -99,6 +99,7 @@ def run(field, state, bo, beta, calib, circuit):
                         serve=f['serve'], ret=f['ret'], elo=f['elo'], n_grass=f['n_grass'],
                         n_match=int(state['n_match'].get(f['player'],0)),
                         form10=f['form10'], grass=f['grass'], ped=f['ped'], active=f.get('active',0.0),
+                        age=f.get('age'), height=f.get('height'), country=f.get('country'),
                         p_title=round(counts[i][0]/N_SIMS,4),
                         p_final=round(counts[i][1]/N_SIMS,4),
                         p_sf=round(counts[i][2]/N_SIMS,4),

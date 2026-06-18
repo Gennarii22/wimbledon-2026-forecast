@@ -12,3 +12,4 @@ node_modules/
 
 exports/
 data/form_state.json
+data/atp_players.csv

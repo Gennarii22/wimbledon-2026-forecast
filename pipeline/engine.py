@@ -30,8 +30,9 @@ def exp_score(ra, rb):
 # ancora (Djokovic). E' un prior dichiarato: penalita' Elo per anni-di-carriera oltre i 14
 # (~eta' 32+), per correggere il rating gonfiato dal prime (es. Djokovic 39 anni).
 AGE_ON = False        # attivato esplicitamente nel forecast live
-def age_penalty(years_active):
-    return min(max(0.0, (years_active - 14.0)) * 6.0, 80.0) if AGE_ON else 0.0
+def age_penalty(age):
+    # penalita' Elo che parte dopo i 32 anni (~inizio declino), 6 Elo/anno, cap 80.
+    return min(max(0.0, (age - 32.0)) * 6.0, 80.0) if AGE_ON else 0.0
 
 def _shrink(general, surface, n):
     w = n / (n + C_SHRINK)

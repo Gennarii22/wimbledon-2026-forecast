@@ -16,6 +16,7 @@ HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
 DATA=os.path.join(ROOT,"data")
 
 FORM=json.load(open(os.path.join(DATA,"form_state.json"))) if os.path.exists(os.path.join(DATA,"form_state.json")) else {}
+PMETA=json.load(open(os.path.join(DATA,"player_meta.json"))) if os.path.exists(os.path.join(DATA,"player_meta.json")) else {}
 _wd=json.load(open(os.path.join(DATA,"withdrawals.json"))) if os.path.exists(os.path.join(DATA,"withdrawals.json")) else {}
 WITHDRAWN={c:set(_wd.get(c,[])) for c in ('ATP','WTA')}
 
@@ -37,11 +38,16 @@ def build(circuit, state, n=128, n_seeds=32):
         seen.add(p)
         r=E.get_ratings(state,p,'Grass')
         fm=FORM.get(p,{})
+        meta=PMETA.get(p,{})
+        active=round(fm.get('active',0.0),1)
+        # età reale se disponibile (ATP), altrimenti proxy da anni-carriera (~debutto a 18,5)
+        age=meta.get('age') if meta.get('age') else round(active+18.5,1)
         field.append(dict(player=p, rank=int(rk),
                           serve=round(r['serve'],1), ret=round(r['ret'],1),
                           elo=round(r['elo'],1), n_grass=int(r['n']),
                           form10=round(fm.get('form10',0.5),3), grass=round(fm.get('grass',0.5),3),
-                          ped=float(fm.get('ped',0.0)), active=round(fm.get('active',0.0),1),
+                          ped=float(fm.get('ped',0.0)), active=active,
+                          age=age, height=meta.get('height'), country=meta.get('country'),
                           last_date=state['last_date'].get(p)))
         if len(field)>=n: break
     for i,f in enumerate(field):
