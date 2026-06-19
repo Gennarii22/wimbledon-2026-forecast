@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-18 21:32 UTC",
+  "generated_utc": "2026-06-19 10:41 UTC",
   "data_through": "2026-06-14",
   "n_matches_atp": 70696,
   "n_matches_wta": 46716,
   "params": {
     "alpha": 1.0,
-    "beta": 0.41873153434007193,
+    "beta": 0.4187315343400719,
     "platt_a": 1.0259058462371573,
-    "platt_b": 0.0197806022091052,
+    "platt_b": 0.019780602209105224,
     "c_form": 0.0,
     "c_grass": 0.0,
-    "c_ped": 0.0632169564318257,
+    "c_ped": 0.06321695643182572,
     "c_shrink": 50.0,
     "c_rel": 100.0,
     "features_kept": [
