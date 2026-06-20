@@ -19,6 +19,7 @@ const I18N = {
     fav: "favorito del modello", champ: "campione effettivo", rankpos: "nel modello",
     legend_pred: "previsto", legend_obs: "osservato",
     withdrawn_label: "Esclusi dal modello — forfait/infortunio",
+    movers_label: "movimenti recenti (warm-up su erba)",
   },
   en: {
     live: "live", kicker: "The Championships · Wimbledon · 29 Jun – 12 Jul 2026",
@@ -39,6 +40,7 @@ const I18N = {
     fav: "model favorite", champ: "actual champion", rankpos: "in model",
     legend_pred: "predicted", legend_obs: "observed",
     withdrawn_label: "Excluded from the model — withdrawn/injured",
+    movers_label: "recent movements (grass warm-up)",
   }
 };
 
@@ -53,13 +55,14 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const pct = (x) => (x * 100).toFixed(1) + "%";
 
 async function boot() {
-  const [men, women, meta, bt] = await Promise.all([
+  const [men, women, meta, bt, mov] = await Promise.all([
     fetch("data/forecast_men.json").then(r => r.json()),
     fetch("data/forecast_women.json").then(r => r.json()),
     fetch("data/meta.json").then(r => r.json()),
     fetch("data/backtest.json").then(r => r.json()),
+    fetch("data/movements.json").then(r => r.json()).catch(() => null),
   ]);
-  DATA.men = men; DATA.women = women; DATA.bt = bt; META = meta;
+  DATA.men = men; DATA.women = women; DATA.bt = bt; META = meta; DATA.mov = mov;
   WE.setParams({ beta: meta.params.beta, platt_a: meta.params.platt_a, platt_b: meta.params.platt_b,
     c_rel: meta.params.c_rel, c_form: meta.params.c_form || 0, c_grass: meta.params.c_grass || 0, c_ped: meta.params.c_ped || 0 });
   bindUI();
@@ -67,13 +70,14 @@ async function boot() {
   renderMeta();
   renderTable();
   renderWithdrawn();
+  renderMovers();
   renderBacktest();
   setupGate();
 }
 
 function bindUI() {
-  $$(".lang-btn").forEach(b => b.onclick = () => { LANG = b.dataset.lang; $$(".lang-btn").forEach(x => x.classList.toggle("active", x === b)); applyLang(); renderMeta(); renderTable(); renderWithdrawn(); renderBacktest(); refreshH2H(); });
-  $$(".tab").forEach(t => t.onclick = () => { DRAW = t.dataset.draw; $$(".tab").forEach(x => x.classList.toggle("active", x === t)); $("#wta-warn").hidden = DRAW !== "women"; renderTable(); renderWithdrawn(); populateH2H(); refreshH2H(); });
+  $$(".lang-btn").forEach(b => b.onclick = () => { LANG = b.dataset.lang; $$(".lang-btn").forEach(x => x.classList.toggle("active", x === b)); applyLang(); renderMeta(); renderTable(); renderWithdrawn(); renderMovers(); renderBacktest(); refreshH2H(); });
+  $$(".tab").forEach(t => t.onclick = () => { DRAW = t.dataset.draw; $$(".tab").forEach(x => x.classList.toggle("active", x === t)); $("#wta-warn").hidden = DRAW !== "women"; renderTable(); renderWithdrawn(); renderMovers(); populateH2H(); refreshH2H(); });
   $$("th.sortable").forEach(th => th.onclick = () => {
     const k = th.dataset.sort;
     SORT.dir = (SORT.key === k) ? -SORT.dir : -1; SORT.key = k;
@@ -105,6 +109,20 @@ function renderMeta() {
   tx.method.forEach(s => { const li = document.createElement("li"); li.textContent = s; ml.appendChild(li); });
   const ll = $("#limits-list"); ll.innerHTML = "";
   tx.limits.forEach(s => { const li = document.createElement("li"); li.textContent = s; ll.appendChild(li); });
+}
+
+function renderMovers() {
+  const t = I18N[LANG];
+  const wrap = $("#movers-wrap");
+  const mv = DATA.mov && DATA.mov.movements ? DATA.mov.movements[DRAW === "men" ? "ATP" : "WTA"] : null;
+  if (!mv || !mv.length) { wrap.hidden = true; return; }
+  wrap.hidden = false;
+  $("#movers-label").textContent = t.movers_label + (DATA.mov.data_through ? " · " + DATA.mov.data_through : "");
+  $("#movers").innerHTML = mv.map(m => {
+    const up = m.delta > 0;
+    return `<span class="mvr ${up ? "up" : "down"}"><span class="ar">${up ? "▲" : "▼"}</span>` +
+      `<span class="pn">${m.player}</span><span class="dv">${(m.now*100).toFixed(1)}% (${up?"+":""}${(m.delta*100).toFixed(1)})</span></span>`;
+  }).join("");
 }
 
 function renderWithdrawn() {

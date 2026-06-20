@@ -1,0 +1,6 @@
+# Iniettore risultati manuali — per aggiornare il forecast PRIMA che tennis-data.co.uk pubblichi.
+# Aggiungi una riga per ogni match concluso. Nomi nel formato del DB: "Cognome I." (es. Sinner J.).
+# Campi minimi: circuit,date,surface,round,best_of,winner,loser. I punteggi set (w1,l1,...) sono
+# opzionali ma consigliati: senza, si aggiorna solo l'Elo generale e la forma, non il Serve/Return Elo.
+# date in formato YYYY-MM-DD. circuit = ATP o WTA. Poi: python3 pipeline/live_update.py --no-fetch
+circuit,date,tournament,series,surface,round,best_of,winner,loser,w_rank,l_rank,w1,l1,w2,l2,w3,l3

@@ -87,9 +87,14 @@ def rows_from_xlsx(path, circuit, year):
     return out
 
 def main():
+    NO_FETCH = "--no-fetch" in sys.argv
     # Base del DB: la sorgente locale sola-lettura se presente (sviluppo),
     # altrimenti il DB gia' committato nel repo (CI / GitHub Actions).
-    if os.path.exists(SRC_DB):
+    if NO_FETCH:
+        if not os.path.exists(DB):
+            raise SystemExit("--no-fetch ma manca data/tennis.db")
+        print("--no-fetch: uso il DB esistente, applico solo i risultati manuali.")
+    elif os.path.exists(SRC_DB):
         print("Copia DB storico dalla sorgente locale...")
         shutil.copyfile(SRC_DB, DB)
     elif os.path.exists(DB):
@@ -100,9 +105,8 @@ def main():
     cur = conn.cursor()
     cols = [r[1] for r in cur.execute("PRAGMA table_info(matches)").fetchall() if r[1] != 'id']
 
-    print(f"Refresh anno {CURRENT_YEAR} da tennis-data.co.uk...")
     refreshed = 0
-    for circuit, url in URLS.items():
+    for circuit, url in ({} if NO_FETCH else URLS).items():
         dest = os.path.join(DATA, f"{circuit.lower()}_{CURRENT_YEAR}.xlsx")
         if not fetch(url, dest):
             if not os.path.exists(dest):
@@ -117,6 +121,25 @@ def main():
         refreshed += len(rows)
         print(f"  {circuit}: {len(rows)} match {CURRENT_YEAR} aggiornati (max date "
               f"{max((r['date'] for r in rows if r['date']), default='?')})")
+
+    # --- iniettore manuale: risultati freschi prima che tennis-data li pubblichi ---
+    man = os.path.join(DATA, "manual_results.csv")
+    if os.path.exists(man):
+        md = pd.read_csv(man, comment='#')
+        md = md.dropna(subset=['winner','loser'], how='any') if 'winner' in md.columns else md.iloc[0:0]
+        n_man = 0
+        for _, row in md.iterrows():
+            d = {c: (row[c] if c in md.columns and pd.notna(row[c]) else None) for c in cols}
+            d['year'] = int(row['date'][:4]) if pd.notna(row.get('date')) else CURRENT_YEAR
+            d['source_file'] = 'manual'
+            # evita duplicati (stesso vincitore/perdente/torneo/anno)
+            dup = cur.execute("SELECT 1 FROM matches WHERE winner=? AND loser=? AND tournament=? AND year=?",
+                              (d['winner'], d['loser'], d.get('tournament'), d['year'])).fetchone()
+            if dup: continue
+            placeholders = ",".join("?"*len(cols))
+            cur.execute(f"INSERT INTO matches ({','.join(cols)}) VALUES ({placeholders})", [d.get(c) for c in cols])
+            n_man += 1
+        if n_man: print(f"  Iniettati {n_man} risultati manuali da manual_results.csv")
     conn.commit()
 
     print("\nVerifica:")

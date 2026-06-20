@@ -1,0 +1,36 @@
+[
+  {
+    "date": "2026-06-14",
+    "generated": "2026-06-20 13:44 UTC",
+    "top": {
+      "ATP": {
+        "Sinner J.": 0.599,
+        "Djokovic N.": 0.1681,
+        "Zverev A.": 0.0535,
+        "Shelton B.": 0.0237,
+        "De Minaur A.": 0.0213,
+        "Fritz T.": 0.0195,
+        "Auger-Aliassime F.": 0.0167,
+        "Medvedev D.": 0.0124,
+        "Rublev A.": 0.0099,
+        "Fils A.": 0.0085,
+        "Cobolli F.": 0.0078,
+        "Lehecka J.": 0.0077
+      },
+      "WTA": {
+        "Swiatek I.": 0.2859,
+        "Sabalenka A.": 0.229,
+        "Rybakina E.": 0.1266,
+        "Andreeva M.": 0.0869,
+        "Anisimova A.": 0.055,
+        "Gauff C.": 0.0511,
+        "Pegula J.": 0.0441,
+        "Svitolina E.": 0.0232,
+        "Kostyuk M.": 0.0145,
+        "Bencic B.": 0.0126,
+        "Muchova K.": 0.0124,
+        "Osaka N.": 0.0076
+      }
+    }
+  }
+]

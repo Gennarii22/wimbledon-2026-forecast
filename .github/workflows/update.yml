@@ -24,14 +24,7 @@ jobs:
       - name: Rebuild data + forecast
         working-directory: pipeline
         run: |
-          python3 01_build_db.py
-          python3 02c_player_meta.py
-          python3 02_ratings.py
-          python3 02b_form_features.py
-          python3 03_backtest.py
-          python3 04_field.py
-          python3 05_montecarlo.py
-          python3 06_export.py
+          python3 live_update.py
 
       - name: Commit refreshed forecast
         run: |

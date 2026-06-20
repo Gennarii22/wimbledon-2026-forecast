@@ -69,6 +69,15 @@ body{
 .withdrawn .wl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--neg);display:block;margin-bottom:4px}
 
 /* board */
+.movers-wrap{margin-top:28px;padding:14px 16px;border:var(--border-soft);border-radius:12px;background:var(--surface)}
+.movers-wrap .mono-label{display:block;margin-bottom:10px}
+.movers{display:flex;flex-wrap:wrap;gap:8px}
+.mvr{display:inline-flex;align-items:center;gap:7px;border:var(--border-soft);border-radius:8px;
+  padding:5px 11px;font-size:13px;background:var(--ink)}
+.mvr .pn{color:var(--parchment)}
+.mvr .dv{font-family:var(--font-mono);font-size:12px}
+.mvr.up .dv{color:var(--sage-live)} .mvr.down .dv{color:var(--neg)}
+.mvr .ar{font-size:11px}
 .board{margin-top:28px}
 .board-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:16px;flex-wrap:wrap}
 .search{background:var(--surface);border:var(--border);border-radius:8px;color:var(--parchment);
