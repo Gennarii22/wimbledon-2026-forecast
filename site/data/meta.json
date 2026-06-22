@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-06-21 09:54 UTC",
-  "data_through": "2026-06-14",
-  "n_matches_atp": 70696,
-  "n_matches_wta": 46716,
+  "generated_utc": "2026-06-22 11:59 UTC",
+  "data_through": "2026-06-21",
+  "n_matches_atp": 70758,
+  "n_matches_wta": 46774,
   "params": {
     "alpha": 1.0,
     "beta": 0.4187315343400719,
