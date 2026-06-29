@@ -1,8 +1,58 @@
 {
-  "generated": "2026-06-28 08:55 UTC",
-  "data_through": "2026-06-21",
+  "generated": "2026-06-29 11:04 UTC",
+  "data_through": "2026-06-28",
   "movements": {
-    "ATP": [],
-    "WTA": []
+    "ATP": [
+      {
+        "player": "Djokovic N.",
+        "prev": 0.1607,
+        "now": 0.1665,
+        "delta": 0.0058
+      }
+    ],
+    "WTA": [
+      {
+        "player": "Andreeva M.",
+        "prev": 0.0848,
+        "now": 0.1275,
+        "delta": 0.0427
+      },
+      {
+        "player": "Swiatek I.",
+        "prev": 0.2997,
+        "now": 0.266,
+        "delta": -0.0337
+      },
+      {
+        "player": "Anisimova A.",
+        "prev": 0.0756,
+        "now": 0.0637,
+        "delta": -0.0119
+      },
+      {
+        "player": "Sabalenka A.",
+        "prev": 0.2089,
+        "now": 0.1972,
+        "delta": -0.0117
+      },
+      {
+        "player": "Rybakina E.",
+        "prev": 0.1048,
+        "now": 0.1148,
+        "delta": 0.01
+      },
+      {
+        "player": "Osaka N.",
+        "prev": 0.0082,
+        "now": 0.0143,
+        "delta": 0.0061
+      },
+      {
+        "player": "Pegula J.",
+        "prev": 0.0572,
+        "now": 0.0514,
+        "delta": -0.0058
+      }
+    ]
   }
 }
