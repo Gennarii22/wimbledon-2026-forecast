@@ -134,5 +134,39 @@
         "Bencic B.": 0.0188
       }
     }
+  },
+  {
+    "date": "2026-07-12",
+    "generated": "2026-07-14 08:09 UTC",
+    "top": {
+      "ATP": {
+        "Sinner J.": 0.5793,
+        "Djokovic N.": 0.1111,
+        "Zverev A.": 0.0619,
+        "Fritz T.": 0.0441,
+        "De Minaur A.": 0.0386,
+        "Auger-Aliassime F.": 0.0312,
+        "Shelton B.": 0.0242,
+        "Medvedev D.": 0.0129,
+        "Cobolli F.": 0.0084,
+        "Lehecka J.": 0.0081,
+        "Rublev A.": 0.0078,
+        "Khachanov K.": 0.0064
+      },
+      "WTA": {
+        "Swiatek I.": 0.2601,
+        "Sabalenka A.": 0.2064,
+        "Rybakina E.": 0.1144,
+        "Andreeva M.": 0.105,
+        "Anisimova A.": 0.0507,
+        "Pegula J.": 0.0454,
+        "Gauff C.": 0.0299,
+        "Osaka N.": 0.0249,
+        "Svitolina E.": 0.023,
+        "Muchova K.": 0.0225,
+        "Noskova L.": 0.0199,
+        "Bencic B.": 0.0188
+      }
+    }
   }
 ]

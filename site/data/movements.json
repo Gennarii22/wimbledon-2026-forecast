@@ -1,57 +1,45 @@
 {
-  "generated": "2026-07-13 09:32 UTC",
-  "data_through": "2026-07-11",
+  "generated": "2026-07-14 08:09 UTC",
+  "data_through": "2026-07-12",
   "movements": {
-    "ATP": [],
-    "WTA": [
+    "ATP": [
       {
-        "player": "Andreeva M.",
-        "prev": 0.1275,
-        "now": 0.105,
-        "delta": -0.0225
+        "player": "Djokovic N.",
+        "prev": 0.1665,
+        "now": 0.1111,
+        "delta": -0.0554
       },
       {
-        "player": "Anisimova A.",
-        "prev": 0.0637,
-        "now": 0.0507,
-        "delta": -0.013
+        "player": "Fritz T.",
+        "prev": 0.0235,
+        "now": 0.0441,
+        "delta": 0.0206
       },
       {
-        "player": "Osaka N.",
-        "prev": 0.0143,
-        "now": 0.0249,
-        "delta": 0.0106
+        "player": "Sinner J.",
+        "prev": 0.5952,
+        "now": 0.5793,
+        "delta": -0.0159
       },
       {
-        "player": "Sabalenka A.",
-        "prev": 0.1972,
-        "now": 0.2064,
-        "delta": 0.0092
+        "player": "Auger-Aliassime F.",
+        "prev": 0.0164,
+        "now": 0.0312,
+        "delta": 0.0148
       },
       {
-        "player": "Muchova K.",
-        "prev": 0.0146,
-        "now": 0.0225,
-        "delta": 0.0079
+        "player": "De Minaur A.",
+        "prev": 0.0244,
+        "now": 0.0386,
+        "delta": 0.0142
       },
       {
-        "player": "Bencic B.",
-        "prev": 0.0116,
-        "now": 0.0188,
-        "delta": 0.0072
-      },
-      {
-        "player": "Pegula J.",
-        "prev": 0.0514,
-        "now": 0.0454,
-        "delta": -0.006
-      },
-      {
-        "player": "Swiatek I.",
-        "prev": 0.266,
-        "now": 0.2601,
-        "delta": -0.0059
+        "player": "Zverev A.",
+        "prev": 0.0501,
+        "now": 0.0619,
+        "delta": 0.0118
       }
-    ]
+    ],
+    "WTA": []
   }
 }
