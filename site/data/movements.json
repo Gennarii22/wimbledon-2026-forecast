@@ -1,45 +1,8 @@
 {
-  "generated": "2026-07-14 08:09 UTC",
+  "generated": "2026-07-15 08:14 UTC",
   "data_through": "2026-07-12",
   "movements": {
-    "ATP": [
-      {
-        "player": "Djokovic N.",
-        "prev": 0.1665,
-        "now": 0.1111,
-        "delta": -0.0554
-      },
-      {
-        "player": "Fritz T.",
-        "prev": 0.0235,
-        "now": 0.0441,
-        "delta": 0.0206
-      },
-      {
-        "player": "Sinner J.",
-        "prev": 0.5952,
-        "now": 0.5793,
-        "delta": -0.0159
-      },
-      {
-        "player": "Auger-Aliassime F.",
-        "prev": 0.0164,
-        "now": 0.0312,
-        "delta": 0.0148
-      },
-      {
-        "player": "De Minaur A.",
-        "prev": 0.0244,
-        "now": 0.0386,
-        "delta": 0.0142
-      },
-      {
-        "player": "Zverev A.",
-        "prev": 0.0501,
-        "now": 0.0619,
-        "delta": 0.0118
-      }
-    ],
+    "ATP": [],
     "WTA": []
   }
 }
