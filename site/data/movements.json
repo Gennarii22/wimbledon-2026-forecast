@@ -1,28 +1,8 @@
 {
-  "generated": "2026-07-20 09:17 UTC",
-  "data_through": "2026-07-19",
+  "generated": "2026-07-21 08:32 UTC",
+  "data_through": "2029-07-20",
   "movements": {
-    "ATP": [
-      {
-        "player": "Sinner J.",
-        "prev": 0.5793,
-        "now": 0.5852,
-        "delta": 0.0059
-      }
-    ],
-    "WTA": [
-      {
-        "player": "Swiatek I.",
-        "prev": 0.2601,
-        "now": 0.2445,
-        "delta": -0.0156
-      },
-      {
-        "player": "Sabalenka A.",
-        "prev": 0.2064,
-        "now": 0.2137,
-        "delta": 0.0073
-      }
-    ]
+    "ATP": [],
+    "WTA": []
   }
 }
