@@ -236,5 +236,39 @@
         "Noskova L.": 0.0202
       }
     }
+  },
+  {
+    "date": "2029-07-20",
+    "generated": "2026-07-27 09:55 UTC",
+    "top": {
+      "ATP": {
+        "Sinner J.": 0.5815,
+        "Djokovic N.": 0.1089,
+        "Zverev A.": 0.06,
+        "Fritz T.": 0.0444,
+        "De Minaur A.": 0.0404,
+        "Auger-Aliassime F.": 0.0323,
+        "Shelton B.": 0.0218,
+        "Medvedev D.": 0.0127,
+        "Rublev A.": 0.0096,
+        "Cobolli F.": 0.0082,
+        "Lehecka J.": 0.0073,
+        "Fils A.": 0.0065
+      },
+      "WTA": {
+        "Swiatek I.": 0.2576,
+        "Sabalenka A.": 0.2123,
+        "Rybakina E.": 0.1124,
+        "Andreeva M.": 0.1067,
+        "Anisimova A.": 0.0506,
+        "Pegula J.": 0.0445,
+        "Gauff C.": 0.03,
+        "Osaka N.": 0.0245,
+        "Svitolina E.": 0.0214,
+        "Muchova K.": 0.0199,
+        "Bencic B.": 0.0188,
+        "Noskova L.": 0.0183
+      }
+    }
   }
 ]
