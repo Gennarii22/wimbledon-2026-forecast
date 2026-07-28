@@ -1,27 +1,8 @@
 {
-  "generated": "2026-07-27 09:55 UTC",
+  "generated": "2026-07-28 08:37 UTC",
   "data_through": "2029-07-20",
   "movements": {
     "ATP": [],
-    "WTA": [
-      {
-        "player": "Swiatek I.",
-        "prev": 0.2445,
-        "now": 0.2576,
-        "delta": 0.0131
-      },
-      {
-        "player": "Andreeva M.",
-        "prev": 0.1013,
-        "now": 0.1067,
-        "delta": 0.0054
-      },
-      {
-        "player": "Pegula J.",
-        "prev": 0.0499,
-        "now": 0.0445,
-        "delta": -0.0054
-      }
-    ]
+    "WTA": []
   }
 }
