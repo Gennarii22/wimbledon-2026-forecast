@@ -1,63 +1,14 @@
 {
-  "generated": "2026-08-03 09:49 UTC",
+  "generated": "2026-08-04 08:39 UTC",
   "data_through": "2029-07-20",
   "movements": {
-    "ATP": [
-      {
-        "player": "Sinner J.",
-        "prev": 0.5815,
-        "now": 0.5594,
-        "delta": -0.0221
-      },
-      {
-        "player": "Fritz T.",
-        "prev": 0.0444,
-        "now": 0.0262,
-        "delta": -0.0182
-      },
-      {
-        "player": "Zverev A.",
-        "prev": 0.06,
-        "now": 0.0743,
-        "delta": 0.0143
-      },
-      {
-        "player": "Medvedev D.",
-        "prev": 0.0127,
-        "now": 0.0196,
-        "delta": 0.0069
-      },
-      {
-        "player": "Auger-Aliassime F.",
-        "prev": 0.0323,
-        "now": 0.038,
-        "delta": 0.0057
-      },
-      {
-        "player": "Lehecka J.",
-        "prev": 0.0073,
-        "now": 0.0126,
-        "delta": 0.0053
-      },
-      {
-        "player": "De Minaur A.",
-        "prev": 0.0404,
-        "now": 0.0353,
-        "delta": -0.0051
-      }
-    ],
+    "ATP": [],
     "WTA": [
       {
         "player": "Pegula J.",
-        "prev": 0.0445,
-        "now": 0.0545,
-        "delta": 0.01
-      },
-      {
-        "player": "Sabalenka A.",
-        "prev": 0.2123,
-        "now": 0.205,
-        "delta": -0.0073
+        "prev": 0.0545,
+        "now": 0.0468,
+        "delta": -0.0077
       }
     ]
   }

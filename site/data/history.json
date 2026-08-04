@@ -304,5 +304,39 @@
         "Kostyuk M.": 0.0178
       }
     }
+  },
+  {
+    "date": "2029-07-20",
+    "generated": "2026-08-04 08:39 UTC",
+    "top": {
+      "ATP": {
+        "Sinner J.": 0.559,
+        "Djokovic N.": 0.1116,
+        "Zverev A.": 0.0743,
+        "Auger-Aliassime F.": 0.038,
+        "De Minaur A.": 0.0353,
+        "Fritz T.": 0.0265,
+        "Shelton B.": 0.0253,
+        "Medvedev D.": 0.0196,
+        "Lehecka J.": 0.0126,
+        "Cobolli F.": 0.0093,
+        "Rublev A.": 0.0083,
+        "Mensik J.": 0.0075
+      },
+      "WTA": {
+        "Swiatek I.": 0.2603,
+        "Sabalenka A.": 0.2068,
+        "Rybakina E.": 0.1124,
+        "Andreeva M.": 0.1089,
+        "Anisimova A.": 0.0496,
+        "Pegula J.": 0.0468,
+        "Gauff C.": 0.0318,
+        "Osaka N.": 0.0243,
+        "Muchova K.": 0.0208,
+        "Svitolina E.": 0.0186,
+        "Noskova L.": 0.0183,
+        "Kostyuk M.": 0.0182
+      }
+    }
   }
 ]

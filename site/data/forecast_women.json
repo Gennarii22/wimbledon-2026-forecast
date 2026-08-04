@@ -26,9 +26,9 @@
       "age": 26.0,
       "height": null,
       "country": null,
-      "p_title": 0.2594,
-      "p_final": 0.3956,
-      "p_sf": 0.5467,
+      "p_title": 0.2603,
+      "p_final": 0.3959,
+      "p_sf": 0.547,
       "p_qf": 0.7164,
       "p_r16": 0.8189
     },
@@ -48,8 +48,8 @@
       "age": 27.8,
       "height": null,
       "country": null,
-      "p_title": 0.205,
-      "p_final": 0.3481,
+      "p_title": 0.2068,
+      "p_final": 0.3506,
       "p_sf": 0.5138,
       "p_qf": 0.6656,
       "p_r16": 0.7701
@@ -70,8 +70,8 @@
       "age": 27.2,
       "height": null,
       "country": null,
-      "p_title": 0.1118,
-      "p_final": 0.2076,
+      "p_title": 0.1124,
+      "p_final": 0.2077,
       "p_sf": 0.3968,
       "p_qf": 0.569,
       "p_r16": 0.7082
@@ -92,33 +92,11 @@
       "age": 22.2,
       "height": null,
       "country": null,
-      "p_title": 0.1071,
-      "p_final": 0.2009,
-      "p_sf": 0.3564,
+      "p_title": 0.1089,
+      "p_final": 0.2042,
+      "p_sf": 0.3617,
       "p_qf": 0.5348,
       "p_r16": 0.6934
-    },
-    {
-      "player": "Pegula J.",
-      "seed": 4,
-      "rank": 3,
-      "serve": 1869.2,
-      "ret": 1470.8,
-      "elo": 1976.9,
-      "n_grass": 45,
-      "n_match": 426,
-      "form10": 0.8,
-      "grass": 0.7,
-      "ped": 0.0,
-      "active": 14.3,
-      "age": 32.8,
-      "height": null,
-      "country": null,
-      "p_title": 0.0545,
-      "p_final": 0.1224,
-      "p_sf": 0.236,
-      "p_qf": 0.4138,
-      "p_r16": 0.6102
     },
     {
       "player": "Anisimova A.",
@@ -136,11 +114,33 @@
       "age": 27.8,
       "height": null,
       "country": null,
-      "p_title": 0.0498,
-      "p_final": 0.1036,
-      "p_sf": 0.1895,
-      "p_qf": 0.4417,
-      "p_r16": 0.648
+      "p_title": 0.0496,
+      "p_final": 0.1024,
+      "p_sf": 0.1876,
+      "p_qf": 0.4374,
+      "p_r16": 0.6414
+    },
+    {
+      "player": "Pegula J.",
+      "seed": 4,
+      "rank": 3,
+      "serve": 1862.4,
+      "ret": 1465.1,
+      "elo": 1965.2,
+      "n_grass": 45,
+      "n_match": 426,
+      "form10": 0.7,
+      "grass": 0.7,
+      "ped": 0.0,
+      "active": 14.3,
+      "age": 32.8,
+      "height": null,
+      "country": null,
+      "p_title": 0.0468,
+      "p_final": 0.11,
+      "p_sf": 0.22,
+      "p_qf": 0.3954,
+      "p_r16": 0.594
     },
     {
       "player": "Gauff C.",
@@ -158,7 +158,7 @@
       "age": 25.8,
       "height": null,
       "country": null,
-      "p_title": 0.0317,
+      "p_title": 0.0318,
       "p_final": 0.0745,
       "p_sf": 0.1866,
       "p_qf": 0.3593,
@@ -180,10 +180,10 @@
       "age": 30.4,
       "height": null,
       "country": null,
-      "p_title": 0.0236,
-      "p_final": 0.0588,
-      "p_sf": 0.1286,
-      "p_qf": 0.2647,
+      "p_title": 0.0243,
+      "p_final": 0.0603,
+      "p_sf": 0.1322,
+      "p_qf": 0.2714,
       "p_r16": 0.4842
     },
     {
@@ -202,8 +202,8 @@
       "age": 27.3,
       "height": null,
       "country": null,
-      "p_title": 0.0206,
-      "p_final": 0.0554,
+      "p_title": 0.0208,
+      "p_final": 0.0562,
       "p_sf": 0.1243,
       "p_qf": 0.3019,
       "p_r16": 0.4741
@@ -224,8 +224,8 @@
       "age": 32.4,
       "height": null,
       "country": null,
-      "p_title": 0.0185,
-      "p_final": 0.051,
+      "p_title": 0.0186,
+      "p_final": 0.0516,
       "p_sf": 0.1152,
       "p_qf": 0.2726,
       "p_r16": 0.4667
@@ -249,7 +249,7 @@
       "p_title": 0.0183,
       "p_final": 0.0449,
       "p_sf": 0.0914,
-      "p_qf": 0.2455,
+      "p_qf": 0.2454,
       "p_r16": 0.4641
     },
     {
@@ -268,9 +268,9 @@
       "age": 26.9,
       "height": null,
       "country": null,
-      "p_title": 0.0178,
-      "p_final": 0.0476,
-      "p_sf": 0.1107,
+      "p_title": 0.0182,
+      "p_final": 0.0485,
+      "p_sf": 0.1127,
       "p_qf": 0.2134,
       "p_r16": 0.4717
     },
@@ -290,7 +290,7 @@
       "age": 32.2,
       "height": null,
       "country": null,
-      "p_title": 0.0177,
+      "p_title": 0.0179,
       "p_final": 0.0466,
       "p_sf": 0.1262,
       "p_qf": 0.2604,
@@ -335,9 +335,9 @@
       "height": null,
       "country": null,
       "p_title": 0.0064,
-      "p_final": 0.0181,
-      "p_sf": 0.0416,
-      "p_qf": 0.1285,
+      "p_final": 0.0179,
+      "p_sf": 0.0412,
+      "p_qf": 0.128,
       "p_r16": 0.2833
     },
     {
@@ -358,7 +358,7 @@
       "country": null,
       "p_title": 0.0063,
       "p_final": 0.019,
-      "p_sf": 0.0485,
+      "p_sf": 0.0486,
       "p_qf": 0.1111,
       "p_r16": 0.3982
     },
@@ -378,8 +378,8 @@
       "age": 22.0,
       "height": null,
       "country": null,
-      "p_title": 0.0062,
-      "p_final": 0.0225,
+      "p_title": 0.0063,
+      "p_final": 0.0229,
       "p_sf": 0.0635,
       "p_qf": 0.1272,
       "p_r16": 0.4088
@@ -422,8 +422,8 @@
       "age": 28.6,
       "height": null,
       "country": null,
-      "p_title": 0.0046,
-      "p_final": 0.0163,
+      "p_title": 0.0047,
+      "p_final": 0.0166,
       "p_sf": 0.0478,
       "p_qf": 0.1402,
       "p_r16": 0.2665
@@ -444,11 +444,11 @@
       "age": 30.3,
       "height": null,
       "country": null,
-      "p_title": 0.0035,
-      "p_final": 0.011,
-      "p_sf": 0.0324,
-      "p_qf": 0.0949,
-      "p_r16": 0.1958
+      "p_title": 0.0036,
+      "p_final": 0.0114,
+      "p_sf": 0.0337,
+      "p_qf": 0.0992,
+      "p_r16": 0.204
     },
     {
       "player": "Navarro E.",
@@ -467,10 +467,32 @@
       "height": null,
       "country": null,
       "p_title": 0.0032,
-      "p_final": 0.0125,
+      "p_final": 0.0127,
       "p_sf": 0.0389,
       "p_qf": 0.1209,
       "p_r16": 0.257
+    },
+    {
+      "player": "Bouzkova M.",
+      "seed": 20,
+      "rank": 21,
+      "serve": 1794.9,
+      "ret": 1409.3,
+      "elo": 1815.9,
+      "n_grass": 38,
+      "n_match": 299,
+      "form10": 0.8,
+      "grass": 0.8,
+      "ped": 1.0,
+      "active": 11.3,
+      "age": 29.8,
+      "height": null,
+      "country": null,
+      "p_title": 0.003,
+      "p_final": 0.0123,
+      "p_sf": 0.0366,
+      "p_qf": 0.0996,
+      "p_r16": 0.2415
     },
     {
       "player": "Paolini J.",
@@ -495,26 +517,26 @@
       "p_r16": 0.3196
     },
     {
-      "player": "Bouzkova M.",
-      "seed": 20,
-      "rank": 21,
-      "serve": 1794.9,
-      "ret": 1409.3,
-      "elo": 1815.9,
-      "n_grass": 38,
-      "n_match": 299,
+      "player": "Eala A.",
+      "seed": 27,
+      "rank": 28,
+      "serve": 1750.7,
+      "ret": 1461.2,
+      "elo": 1929.1,
+      "n_grass": 18,
+      "n_match": 86,
       "form10": 0.8,
-      "grass": 0.8,
-      "ped": 1.0,
-      "active": 11.3,
-      "age": 29.8,
+      "grass": 0.6,
+      "ped": 0.0,
+      "active": 4.3,
+      "age": 22.8,
       "height": null,
       "country": null,
-      "p_title": 0.0029,
-      "p_final": 0.0116,
-      "p_sf": 0.0352,
-      "p_qf": 0.0965,
-      "p_r16": 0.2415
+      "p_title": 0.0014,
+      "p_final": 0.0054,
+      "p_sf": 0.0161,
+      "p_qf": 0.0709,
+      "p_r16": 0.1604
     },
     {
       "player": "Kalinskaya A.",
@@ -532,7 +554,7 @@
       "age": 28.2,
       "height": null,
       "country": null,
-      "p_title": 0.0012,
+      "p_title": 0.0013,
       "p_final": 0.0053,
       "p_sf": 0.0179,
       "p_qf": 0.0516,
@@ -556,31 +578,9 @@
       "country": null,
       "p_title": 0.0012,
       "p_final": 0.0048,
-      "p_sf": 0.0206,
+      "p_sf": 0.0208,
       "p_qf": 0.0608,
       "p_r16": 0.2032
-    },
-    {
-      "player": "Eala A.",
-      "seed": 27,
-      "rank": 28,
-      "serve": 1742.7,
-      "ret": 1451.7,
-      "elo": 1898.7,
-      "n_grass": 18,
-      "n_match": 86,
-      "form10": 0.7,
-      "grass": 0.6,
-      "ped": 0.0,
-      "active": 4.3,
-      "age": 22.8,
-      "height": null,
-      "country": null,
-      "p_title": 0.0012,
-      "p_final": 0.0044,
-      "p_sf": 0.014,
-      "p_qf": 0.0641,
-      "p_r16": 0.1493
     },
     {
       "player": "Tauson C.",
@@ -600,9 +600,53 @@
       "country": null,
       "p_title": 0.001,
       "p_final": 0.0054,
-      "p_sf": 0.0197,
+      "p_sf": 0.0202,
       "p_qf": 0.0591,
       "p_r16": 0.1236
+    },
+    {
+      "player": "Vekic D.",
+      "seed": 32,
+      "rank": 34,
+      "serve": 1788.6,
+      "ret": 1360.2,
+      "elo": 1744.6,
+      "n_grass": 90,
+      "n_match": 468,
+      "form10": 0.6,
+      "grass": 0.6,
+      "ped": 1.0,
+      "active": 13.8,
+      "age": 32.3,
+      "height": null,
+      "country": null,
+      "p_title": 0.001,
+      "p_final": 0.0047,
+      "p_sf": 0.0177,
+      "p_qf": 0.048,
+      "p_r16": 0.0905
+    },
+    {
+      "player": "Raducanu E.",
+      "seed": null,
+      "rank": 42,
+      "serve": 1747.2,
+      "ret": 1437.4,
+      "elo": 1792.3,
+      "n_grass": 32,
+      "n_match": 164,
+      "form10": 0.5,
+      "grass": 0.7,
+      "ped": 2.0,
+      "active": 5.1,
+      "age": 23.6,
+      "height": null,
+      "country": null,
+      "p_title": 0.001,
+      "p_final": 0.0039,
+      "p_sf": 0.0166,
+      "p_qf": 0.0498,
+      "p_r16": 0.1285
     },
     {
       "player": "Fernandez L.A.",
@@ -625,50 +669,6 @@
       "p_sf": 0.0203,
       "p_qf": 0.0553,
       "p_r16": 0.115
-    },
-    {
-      "player": "Vekic D.",
-      "seed": 32,
-      "rank": 34,
-      "serve": 1788.6,
-      "ret": 1360.2,
-      "elo": 1744.6,
-      "n_grass": 90,
-      "n_match": 468,
-      "form10": 0.6,
-      "grass": 0.6,
-      "ped": 1.0,
-      "active": 13.8,
-      "age": 32.3,
-      "height": null,
-      "country": null,
-      "p_title": 0.0009,
-      "p_final": 0.0046,
-      "p_sf": 0.0177,
-      "p_qf": 0.048,
-      "p_r16": 0.0905
-    },
-    {
-      "player": "Raducanu E.",
-      "seed": null,
-      "rank": 42,
-      "serve": 1747.2,
-      "ret": 1437.4,
-      "elo": 1792.3,
-      "n_grass": 32,
-      "n_match": 164,
-      "form10": 0.5,
-      "grass": 0.7,
-      "ped": 2.0,
-      "active": 5.1,
-      "age": 23.6,
-      "height": null,
-      "country": null,
-      "p_title": 0.0009,
-      "p_final": 0.0038,
-      "p_sf": 0.0164,
-      "p_qf": 0.0496,
-      "p_r16": 0.1285
     },
     {
       "player": "Potapova A.",
@@ -709,10 +709,10 @@
       "height": null,
       "country": null,
       "p_title": 0.0007,
-      "p_final": 0.0034,
-      "p_sf": 0.0146,
-      "p_qf": 0.0427,
-      "p_r16": 0.1161
+      "p_final": 0.0035,
+      "p_sf": 0.0148,
+      "p_qf": 0.0428,
+      "p_r16": 0.1164
     },
     {
       "player": "Sakkari M.",
@@ -732,9 +732,9 @@
       "country": null,
       "p_title": 0.0004,
       "p_final": 0.0013,
-      "p_sf": 0.0065,
-      "p_qf": 0.0224,
-      "p_r16": 0.0751
+      "p_sf": 0.0066,
+      "p_qf": 0.0225,
+      "p_r16": 0.0754
     },
     {
       "player": "Siegemund L.",
@@ -775,8 +775,8 @@
       "height": null,
       "country": null,
       "p_title": 0.0004,
-      "p_final": 0.0018,
-      "p_sf": 0.0077,
+      "p_final": 0.0019,
+      "p_sf": 0.0078,
       "p_qf": 0.0255,
       "p_r16": 0.0768
     },
@@ -798,9 +798,9 @@
       "country": null,
       "p_title": 0.0003,
       "p_final": 0.0011,
-      "p_sf": 0.0055,
+      "p_sf": 0.0056,
       "p_qf": 0.021,
-      "p_r16": 0.0712
+      "p_r16": 0.0714
     },
     {
       "player": "Tjen J.",
@@ -821,8 +821,8 @@
       "p_title": 0.0003,
       "p_final": 0.0013,
       "p_sf": 0.0055,
-      "p_qf": 0.0197,
-      "p_r16": 0.0653
+      "p_qf": 0.0198,
+      "p_r16": 0.0654
     },
     {
       "player": "Marcinko P.",
@@ -844,7 +844,29 @@
       "p_final": 0.0005,
       "p_sf": 0.0034,
       "p_qf": 0.0153,
-      "p_r16": 0.0561
+      "p_r16": 0.056
+    },
+    {
+      "player": "Sonmez Z.",
+      "seed": null,
+      "rank": 52,
+      "serve": 1711.8,
+      "ret": 1361.2,
+      "elo": 1691.6,
+      "n_grass": 16,
+      "n_match": 74,
+      "form10": 0.5,
+      "grass": 0.6,
+      "ped": 2.0,
+      "active": 3.0,
+      "age": 21.5,
+      "height": null,
+      "country": null,
+      "p_title": 0.0003,
+      "p_final": 0.0011,
+      "p_sf": 0.0044,
+      "p_qf": 0.0183,
+      "p_r16": 0.0674
     },
     {
       "player": "Bouzas Maneiro J.",
@@ -864,9 +886,9 @@
       "country": null,
       "p_title": 0.0003,
       "p_final": 0.0013,
-      "p_sf": 0.0057,
+      "p_sf": 0.0058,
       "p_qf": 0.0206,
-      "p_r16": 0.0657
+      "p_r16": 0.0658
     },
     {
       "player": "Kasatkina D.",
@@ -886,9 +908,9 @@
       "country": null,
       "p_title": 0.0003,
       "p_final": 0.0017,
-      "p_sf": 0.0068,
+      "p_sf": 0.0067,
       "p_qf": 0.0252,
-      "p_r16": 0.0793
+      "p_r16": 0.0792
     },
     {
       "player": "Krueger A.",
@@ -909,8 +931,8 @@
       "p_title": 0.0003,
       "p_final": 0.001,
       "p_sf": 0.0045,
-      "p_qf": 0.0197,
-      "p_r16": 0.0676
+      "p_qf": 0.0196,
+      "p_r16": 0.0675
     },
     {
       "player": "Badosa P.",
@@ -932,7 +954,7 @@
       "p_final": 0.0008,
       "p_sf": 0.0052,
       "p_qf": 0.0201,
-      "p_r16": 0.0656
+      "p_r16": 0.0657
     },
     {
       "player": "Cirstea S.",
@@ -973,8 +995,8 @@
       "height": null,
       "country": null,
       "p_title": 0.0002,
-      "p_final": 0.0016,
-      "p_sf": 0.0067,
+      "p_final": 0.0017,
+      "p_sf": 0.0068,
       "p_qf": 0.0245,
       "p_r16": 0.0545
     },
@@ -996,31 +1018,9 @@
       "country": null,
       "p_title": 0.0002,
       "p_final": 0.001,
-      "p_sf": 0.0038,
-      "p_qf": 0.0152,
+      "p_sf": 0.0037,
+      "p_qf": 0.0153,
       "p_r16": 0.0592
-    },
-    {
-      "player": "Sonmez Z.",
-      "seed": null,
-      "rank": 52,
-      "serve": 1711.8,
-      "ret": 1361.2,
-      "elo": 1691.6,
-      "n_grass": 16,
-      "n_match": 74,
-      "form10": 0.5,
-      "grass": 0.6,
-      "ped": 2.0,
-      "active": 3.0,
-      "age": 21.5,
-      "height": null,
-      "country": null,
-      "p_title": 0.0002,
-      "p_final": 0.001,
-      "p_sf": 0.0044,
-      "p_qf": 0.0183,
-      "p_r16": 0.0672
     },
     {
       "player": "Stearns P.",
@@ -1041,8 +1041,8 @@
       "p_title": 0.0002,
       "p_final": 0.0014,
       "p_sf": 0.0054,
-      "p_qf": 0.0209,
-      "p_r16": 0.0675
+      "p_qf": 0.021,
+      "p_r16": 0.0676
     },
     {
       "player": "Valentova T.",
@@ -1063,8 +1063,8 @@
       "p_title": 0.0002,
       "p_final": 0.0009,
       "p_sf": 0.0046,
-      "p_qf": 0.0188,
-      "p_r16": 0.0675
+      "p_qf": 0.0189,
+      "p_r16": 0.0676
     },
     {
       "player": "McNally C.",
@@ -1083,8 +1083,8 @@
       "height": null,
       "country": null,
       "p_title": 0.0002,
-      "p_final": 0.0006,
-      "p_sf": 0.0043,
+      "p_final": 0.0007,
+      "p_sf": 0.0044,
       "p_qf": 0.0196,
       "p_r16": 0.0674
     },
@@ -1107,8 +1107,8 @@
       "p_title": 0.0002,
       "p_final": 0.001,
       "p_sf": 0.0052,
-      "p_qf": 0.0191,
-      "p_r16": 0.0631
+      "p_qf": 0.019,
+      "p_r16": 0.0632
     },
     {
       "player": "Siniakova K.",
@@ -1128,9 +1128,9 @@
       "country": null,
       "p_title": 0.0001,
       "p_final": 0.001,
-      "p_sf": 0.0068,
-      "p_qf": 0.0245,
-      "p_r16": 0.0819
+      "p_sf": 0.0069,
+      "p_qf": 0.0247,
+      "p_r16": 0.082
     },
     {
       "player": "Bejlek S.",
@@ -1150,7 +1150,7 @@
       "country": null,
       "p_title": 0.0001,
       "p_final": 0.0008,
-      "p_sf": 0.0051,
+      "p_sf": 0.0052,
       "p_qf": 0.0221,
       "p_r16": 0.0747
     },
@@ -1172,7 +1172,7 @@
       "country": null,
       "p_title": 0.0001,
       "p_final": 0.0011,
-      "p_sf": 0.0054,
+      "p_sf": 0.0055,
       "p_qf": 0.0213,
       "p_r16": 0.0731
     },
@@ -1195,7 +1195,7 @@
       "p_title": 0.0001,
       "p_final": 0.0005,
       "p_sf": 0.0038,
-      "p_qf": 0.0177,
+      "p_qf": 0.0178,
       "p_r16": 0.0608
     },
     {
@@ -1215,10 +1215,10 @@
       "height": null,
       "country": null,
       "p_title": 0.0001,
-      "p_final": 0.0017,
+      "p_final": 0.0018,
       "p_sf": 0.0071,
       "p_qf": 0.0257,
-      "p_r16": 0.0798
+      "p_r16": 0.08
     },
     {
       "player": "Frech M.",
@@ -1239,7 +1239,7 @@
       "p_title": 0.0001,
       "p_final": 0.0004,
       "p_sf": 0.002,
-      "p_qf": 0.0094,
+      "p_qf": 0.0093,
       "p_r16": 0.0408
     },
     {
@@ -1260,9 +1260,9 @@
       "country": null,
       "p_title": 0.0001,
       "p_final": 0.0003,
-      "p_sf": 0.0023,
-      "p_qf": 0.0122,
-      "p_r16": 0.047
+      "p_sf": 0.0024,
+      "p_qf": 0.0124,
+      "p_r16": 0.0471
     },
     {
       "player": "Snigur D.",
@@ -1283,7 +1283,7 @@
       "p_title": 0.0001,
       "p_final": 0.0008,
       "p_sf": 0.0041,
-      "p_qf": 0.0162,
+      "p_qf": 0.0163,
       "p_r16": 0.0581
     },
     {
@@ -1306,7 +1306,7 @@
       "p_final": 0.0008,
       "p_sf": 0.0034,
       "p_qf": 0.0138,
-      "p_r16": 0.0513
+      "p_r16": 0.0514
     },
     {
       "player": "Parks A.",
@@ -1328,7 +1328,7 @@
       "p_final": 0.0002,
       "p_sf": 0.0009,
       "p_qf": 0.0061,
-      "p_r16": 0.0259
+      "p_r16": 0.026
     },
     {
       "player": "Boulter K.",
@@ -1347,7 +1347,7 @@
       "height": null,
       "country": null,
       "p_title": 0.0001,
-      "p_final": 0.0006,
+      "p_final": 0.0007,
       "p_sf": 0.0041,
       "p_qf": 0.0181,
       "p_r16": 0.0613
@@ -1371,8 +1371,8 @@
       "p_title": 0.0001,
       "p_final": 0.0003,
       "p_sf": 0.002,
-      "p_qf": 0.0093,
-      "p_r16": 0.0401
+      "p_qf": 0.0094,
+      "p_r16": 0.0402
     },
     {
       "player": "Cocciaretto E.",
@@ -1393,8 +1393,8 @@
       "p_title": 0.0001,
       "p_final": 0.0009,
       "p_sf": 0.0047,
-      "p_qf": 0.0188,
-      "p_r16": 0.0639
+      "p_qf": 0.0189,
+      "p_r16": 0.064
     },
     {
       "player": "Ruse E.G.",
@@ -1415,8 +1415,8 @@
       "p_title": 0.0001,
       "p_final": 0.0006,
       "p_sf": 0.0028,
-      "p_qf": 0.0129,
-      "p_r16": 0.0489
+      "p_qf": 0.0131,
+      "p_r16": 0.049
     },
     {
       "player": "Gibson T.",
@@ -1438,7 +1438,7 @@
       "p_final": 0.0003,
       "p_sf": 0.002,
       "p_qf": 0.0095,
-      "p_r16": 0.0389
+      "p_r16": 0.039
     },
     {
       "player": "Tagger L.",
@@ -1460,7 +1460,7 @@
       "p_final": 0.0004,
       "p_sf": 0.0026,
       "p_qf": 0.0121,
-      "p_r16": 0.0477
+      "p_r16": 0.0478
     },
     {
       "player": "Lys E.",
@@ -1482,7 +1482,7 @@
       "p_final": 0.0003,
       "p_sf": 0.003,
       "p_qf": 0.0134,
-      "p_r16": 0.0527
+      "p_r16": 0.0528
     },
     {
       "player": "Tararudee L.",
@@ -1547,7 +1547,7 @@
       "p_title": 0.0001,
       "p_final": 0.0002,
       "p_sf": 0.0015,
-      "p_qf": 0.0082,
+      "p_qf": 0.0083,
       "p_r16": 0.0322
     },
     {
@@ -1568,9 +1568,9 @@
       "country": null,
       "p_title": 0.0001,
       "p_final": 0.0004,
-      "p_sf": 0.0023,
+      "p_sf": 0.0024,
       "p_qf": 0.0103,
-      "p_r16": 0.0405
+      "p_r16": 0.0406
     },
     {
       "player": "Quevedo K.",
@@ -1678,7 +1678,7 @@
       "country": null,
       "p_title": 0.0,
       "p_final": 0.0005,
-      "p_sf": 0.0034,
+      "p_sf": 0.0035,
       "p_qf": 0.0154,
       "p_r16": 0.0568
     },
@@ -1724,7 +1724,7 @@
       "p_final": 0.0004,
       "p_sf": 0.0035,
       "p_qf": 0.0153,
-      "p_r16": 0.0583
+      "p_r16": 0.0585
     },
     {
       "player": "Kalinina A.",
@@ -1746,7 +1746,7 @@
       "p_final": 0.0002,
       "p_sf": 0.0013,
       "p_qf": 0.0072,
-      "p_r16": 0.037
+      "p_r16": 0.0371
     },
     {
       "player": "Parry D.",
@@ -1768,7 +1768,7 @@
       "p_final": 0.0006,
       "p_sf": 0.0037,
       "p_qf": 0.0159,
-      "p_r16": 0.0608
+      "p_r16": 0.0607
     },
     {
       "player": "Zhang S.",
@@ -1790,7 +1790,7 @@
       "p_final": 0.0,
       "p_sf": 0.0002,
       "p_qf": 0.0019,
-      "p_r16": 0.0149
+      "p_r16": 0.015
     },
     {
       "player": "Linette M.",
@@ -1811,8 +1811,8 @@
       "p_title": 0.0,
       "p_final": 0.0004,
       "p_sf": 0.0023,
-      "p_qf": 0.0112,
-      "p_r16": 0.0478
+      "p_qf": 0.0113,
+      "p_r16": 0.0479
     },
     {
       "player": "Birrell K.",
@@ -1831,10 +1831,10 @@
       "height": null,
       "country": null,
       "p_title": 0.0,
-      "p_final": 0.0004,
+      "p_final": 0.0005,
       "p_sf": 0.002,
       "p_qf": 0.009,
-      "p_r16": 0.0382
+      "p_r16": 0.038
     },
     {
       "player": "Yastremska D.",
@@ -1855,7 +1855,7 @@
       "p_title": 0.0,
       "p_final": 0.0005,
       "p_sf": 0.0024,
-      "p_qf": 0.0121,
+      "p_qf": 0.0122,
       "p_r16": 0.0486
     },
     {
@@ -1878,7 +1878,7 @@
       "p_final": 0.0001,
       "p_sf": 0.0011,
       "p_qf": 0.0053,
-      "p_r16": 0.0299
+      "p_r16": 0.0298
     },
     {
       "player": "Pliskova Ka.",
@@ -1899,8 +1899,8 @@
       "p_title": 0.0,
       "p_final": 0.0004,
       "p_sf": 0.0029,
-      "p_qf": 0.014,
-      "p_r16": 0.0516
+      "p_qf": 0.0141,
+      "p_r16": 0.0517
     },
     {
       "player": "Joint M.",
@@ -1921,8 +1921,8 @@
       "p_title": 0.0,
       "p_final": 0.0003,
       "p_sf": 0.0019,
-      "p_qf": 0.0082,
-      "p_r16": 0.0355
+      "p_qf": 0.0083,
+      "p_r16": 0.0356
     },
     {
       "player": "Putintseva Y.",
@@ -1944,7 +1944,7 @@
       "p_final": 0.0001,
       "p_sf": 0.0011,
       "p_qf": 0.0065,
-      "p_r16": 0.0307
+      "p_r16": 0.0309
     },
     {
       "player": "Maria T.",
@@ -1965,8 +1965,8 @@
       "p_title": 0.0,
       "p_final": 0.0005,
       "p_sf": 0.0018,
-      "p_qf": 0.0082,
-      "p_r16": 0.0339
+      "p_qf": 0.0083,
+      "p_r16": 0.034
     },
     {
       "player": "Kraus S.",
@@ -1986,7 +1986,7 @@
       "country": null,
       "p_title": 0.0,
       "p_final": 0.0002,
-      "p_sf": 0.0011,
+      "p_sf": 0.001,
       "p_qf": 0.006,
       "p_r16": 0.0297
     },
@@ -2009,8 +2009,8 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.001,
-      "p_qf": 0.006,
-      "p_r16": 0.0286
+      "p_qf": 0.0059,
+      "p_r16": 0.0285
     },
     {
       "player": "Zarazua R.",
@@ -2032,7 +2032,7 @@
       "p_final": 0.0001,
       "p_sf": 0.0009,
       "p_qf": 0.0055,
-      "p_r16": 0.0266
+      "p_r16": 0.0267
     },
     {
       "player": "Timofeeva M.",
@@ -2054,7 +2054,7 @@
       "p_final": 0.0001,
       "p_sf": 0.0012,
       "p_qf": 0.007,
-      "p_r16": 0.0321
+      "p_r16": 0.0322
     },
     {
       "player": "Korneeva A.",
@@ -2119,8 +2119,8 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0011,
-      "p_qf": 0.0063,
-      "p_r16": 0.0297
+      "p_qf": 0.0065,
+      "p_r16": 0.0298
     },
     {
       "player": "Tomljanovic A.",
@@ -2140,7 +2140,7 @@
       "country": null,
       "p_title": 0.0,
       "p_final": 0.0,
-      "p_sf": 0.001,
+      "p_sf": 0.0011,
       "p_qf": 0.0063,
       "p_r16": 0.0259
     },
@@ -2229,7 +2229,7 @@
       "p_title": 0.0,
       "p_final": 0.0,
       "p_sf": 0.0009,
-      "p_qf": 0.0062,
+      "p_qf": 0.0063,
       "p_r16": 0.0284
     },
     {
@@ -2273,7 +2273,7 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0007,
-      "p_qf": 0.0055,
+      "p_qf": 0.0056,
       "p_r16": 0.027
     },
     {
@@ -2318,7 +2318,7 @@
       "p_final": 0.0,
       "p_sf": 0.0002,
       "p_qf": 0.0026,
-      "p_r16": 0.0162
+      "p_r16": 0.0163
     },
     {
       "player": "Jones F.",
@@ -2470,9 +2470,9 @@
       "country": null,
       "p_title": 0.0,
       "p_final": 0.0003,
-      "p_sf": 0.0015,
+      "p_sf": 0.0016,
       "p_qf": 0.0077,
-      "p_r16": 0.0357
+      "p_r16": 0.0356
     },
     {
       "player": "Kenin S.",
@@ -2647,7 +2647,7 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0007,
-      "p_qf": 0.0044,
+      "p_qf": 0.0043,
       "p_r16": 0.0231
     },
     {
@@ -2669,7 +2669,7 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0007,
-      "p_qf": 0.0033,
+      "p_qf": 0.0034,
       "p_r16": 0.0181
     },
     {
@@ -2713,7 +2713,7 @@
       "p_title": 0.0,
       "p_final": 0.0,
       "p_sf": 0.0007,
-      "p_qf": 0.0039,
+      "p_qf": 0.004,
       "p_r16": 0.0204
     },
     {
@@ -2758,7 +2758,7 @@
       "p_final": 0.0002,
       "p_sf": 0.001,
       "p_qf": 0.0051,
-      "p_r16": 0.0244
+      "p_r16": 0.0245
     },
     {
       "player": "Haddad Maia B.",
@@ -2779,8 +2779,8 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0012,
-      "p_qf": 0.0065,
-      "p_r16": 0.0333
+      "p_qf": 0.0066,
+      "p_r16": 0.0334
     },
     {
       "player": "Lamens S.",
@@ -2801,7 +2801,7 @@
       "p_title": 0.0,
       "p_final": 0.0001,
       "p_sf": 0.0006,
-      "p_qf": 0.0043,
+      "p_qf": 0.0044,
       "p_r16": 0.0239
     },
     {
@@ -2822,7 +2822,7 @@
       "country": null,
       "p_title": 0.0,
       "p_final": 0.0001,
-      "p_sf": 0.0007,
+      "p_sf": 0.0008,
       "p_qf": 0.0055,
       "p_r16": 0.0259
     }
@@ -2945,7 +2945,7 @@
       "a_seed": 4,
       "b": "Starodubtseva Y.",
       "b_seed": null,
-      "p_a": 0.871
+      "p_a": 0.867
     },
     {
       "a": "Valentova T.",
@@ -3239,7 +3239,7 @@
       "a_seed": 27,
       "b": "Bassols M.",
       "b_seed": null,
-      "p_a": 0.762
+      "p_a": 0.763
     },
     {
       "a": "Kawa K.",
