@@ -1,15 +1,8 @@
 {
-  "generated": "2026-08-04 08:39 UTC",
+  "generated": "2026-08-05 08:38 UTC",
   "data_through": "2029-07-20",
   "movements": {
     "ATP": [],
-    "WTA": [
-      {
-        "player": "Pegula J.",
-        "prev": 0.0545,
-        "now": 0.0468,
-        "delta": -0.0077
-      }
-    ]
+    "WTA": []
   }
 }
