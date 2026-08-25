@@ -372,5 +372,39 @@
         "Muchova K.": 0.0195
       }
     }
+  },
+  {
+    "date": "2026-08-24",
+    "generated": "2026-08-25 06:52 UTC",
+    "top": {
+      "ATP": {
+        "Sinner J.": 0.572,
+        "Djokovic N.": 0.1134,
+        "Zverev A.": 0.0612,
+        "De Minaur A.": 0.0405,
+        "Fritz T.": 0.0314,
+        "Auger-Aliassime F.": 0.0295,
+        "Medvedev D.": 0.0194,
+        "Shelton B.": 0.0161,
+        "Cobolli F.": 0.0149,
+        "Jodar R.": 0.01,
+        "Rublev A.": 0.0098,
+        "Lehecka J.": 0.0087
+      },
+      "WTA": {
+        "Swiatek I.": 0.272,
+        "Sabalenka A.": 0.1661,
+        "Rybakina E.": 0.1249,
+        "Andreeva M.": 0.0953,
+        "Pegula J.": 0.0587,
+        "Gauff C.": 0.0489,
+        "Anisimova A.": 0.046,
+        "Noskova L.": 0.0258,
+        "Osaka N.": 0.0247,
+        "Svitolina E.": 0.0219,
+        "Kostyuk M.": 0.0196,
+        "Muchova K.": 0.0183
+      }
+    }
   }
 ]
