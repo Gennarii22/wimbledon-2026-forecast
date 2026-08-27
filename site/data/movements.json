@@ -1,8 +1,51 @@
 {
-  "generated": "2026-08-26 06:54 UTC",
+  "generated": "2026-08-27 17:25 UTC",
   "data_through": "2026-08-24",
   "movements": {
-    "ATP": [],
+    "ATP": [
+      {
+        "player": "Sinner J.",
+        "prev": 0.572,
+        "now": 0.5422,
+        "delta": -0.0298
+      },
+      {
+        "player": "Fils A.",
+        "prev": 0.0073,
+        "now": 0.0185,
+        "delta": 0.0112
+      },
+      {
+        "player": "Shelton B.",
+        "prev": 0.0161,
+        "now": 0.0264,
+        "delta": 0.0103
+      },
+      {
+        "player": "Jodar R.",
+        "prev": 0.01,
+        "now": 0.0179,
+        "delta": 0.0079
+      },
+      {
+        "player": "Zverev A.",
+        "prev": 0.0612,
+        "now": 0.0679,
+        "delta": 0.0067
+      },
+      {
+        "player": "Cobolli F.",
+        "prev": 0.0149,
+        "now": 0.0082,
+        "delta": -0.0067
+      },
+      {
+        "player": "Rublev A.",
+        "prev": 0.0098,
+        "now": 0.0045,
+        "delta": -0.0053
+      }
+    ],
     "WTA": []
   }
 }
