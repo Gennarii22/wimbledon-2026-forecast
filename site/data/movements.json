@@ -1,21 +1,8 @@
 {
-  "generated": "2026-08-31 12:59 UTC",
+  "generated": "2026-09-01 11:16 UTC",
   "data_through": "2026-08-30",
   "movements": {
     "ATP": [],
-    "WTA": [
-      {
-        "player": "Swiatek I.",
-        "prev": 0.272,
-        "now": 0.2612,
-        "delta": -0.0108
-      },
-      {
-        "player": "Sabalenka A.",
-        "prev": 0.1661,
-        "now": 0.1711,
-        "delta": 0.005
-      }
-    ]
+    "WTA": []
   }
 }
